@@ -1,41 +1,108 @@
 # Domain 0 - AWS Fundamentals
 
+## Cloud Computing
+
 Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS)
 
-Benefits:
+### Benefits:
 
-Lower costs
-Scalability
-Global footprint
-High availability
-Security
-Innovation
+- Lower costs — Pay only for what you use instead of upfront hardware investments.
+- Scalability — Scale resources up or down automatically based on demand.
+- Global footprint — Deploy applications close to users worldwide through AWS's global infrastructure.
+- High availability — Built-in redundancy minimizes downtime across isolated data centers.
+- Security — Enterprise-grade protections and compliance certifications are built into the platform.
+- Innovation — Access new services and technologies without managing underlying infrastructure.
 
 ## Cloud Models
 
-- Public Cloud
-- Private Cloud
-- Hybrid Cloud
+- Public Cloud — Resources owned and operated by a third-party provider like AWS.
+- Private Cloud — Dedicated infrastructure used exclusively by a single organization.
+- Hybrid Cloud — Combines public and private clouds for flexible workloads.
 
 ## Cloud Service Types
 
-- Infrastructure as a service (IaaS)
-- Platform as a service (PaaS)
-- Software as a service (SaaS)
+- Infrastructure as a service (IaaS) — Rent virtual machines, storage, and networking without managing physical hardware.
+- Platform as a service (PaaS) — Build and deploy applications on a managed platform without managing the OS.
+- Software as a service (SaaS) — Use complete software applications over the internet on a subscription basis.
 
 ## IaaS Drawbacks
 
-- IT Expertise
-- Cost Management
-- Vendor Lock-in
+- IT Expertise — You must configure, patch, and manage the operating system and applications yourself.
+- Cost Management — Unmonitored usage can lead to unexpected spending on compute and storage.
+- Vendor Lock-in — Migrating workloads to another provider can be complex and time-consuming.
 
 ## PaaS Advantages
 
-- Focus
-- Costs
-- Fully Fledged Development Platform
-- Analytics
-- Data Integration
+- Focus — Developers concentrate on code rather than infrastructure management.
+- Costs — Reduced overhead from managed runtimes and built-in tooling.
+- Fully Fledged Development Platform — Includes databases, middleware, and deployment tools out of the box.
+- Analytics — Built-in monitoring and reporting help track application performance.
+- Data Integration — Simplified connectors make combining data sources easier.
+
+## Software as a Service
+
+- Amazon WorkDocs — Secure document sharing and collaboration for teams.
+- Amazon Chime — Online meetings, video conferencing, and chat.
+- Amazon Connect — Cloud-based contact center with voice and chat support.
+- Amazon Q — Generative AI assistant for business users and developers.
+- Amazon Q Developer — AI coding assistant integrated into the development workflow.
+
+## Global Cloud
+
+- Region — A geographic area containing multiple isolated Availability Zones.
+- Availability Zones (AZ) — One or more discrete data centers within a Region.
+- Local Zones — Extensions of AWS Regions that place compute closer to end users.
+
+## Region
+
+- Proximity to users — Lower latency when resources are deployed near your audience.
+- Compliance — Data residency requirements may restrict which Regions you can use.
+- Available Services — Not every AWS service is available in every Region.
+- Costs — Pricing varies by Region based on local infrastructure and demand.
+
+## Availability Zones
+
+- Each region has at least 3 — Provides fault tolerance if one data center fails.
+- 10s of miles from each other — Close enough for low latency but far enough to limit shared disaster risk.
+
+## Local Zones
+
+- For applications needing extremely low latency — Places compute within single-digit milliseconds of end users in metro areas.
+- Streaming media, gaming, VR, AI — Workloads where even small delays noticeably degrade user experience.
+
+## Pricing Models
+
+- On-Demand Instances — Pay by the hour or second with no long-term commitment.
+- Savings Plans — Commit to consistent usage for lower rates across compute services.
+- Dedicated Hosts — Physical servers dedicated to your use for licensing or compliance needs.
+- Spot Instances — Use spare AWS capacity at steep discounts when interruptions are tolerable.
+
+## Shared Responsibility Model
+
+- AWS responsibile for security OF the cloud — Protects the underlying infrastructure that runs all AWS services.
+    - Protecting infrastructure
+    - Physical security of data centers, hardware, software, networking, global
+
+- Customer responsibile for security IN the cloud — Owns securing data, identities, and configurations you deploy.
+    - Securing and managing deployed components
+
+## AWS IAM
+
+- IAM User — Person, app, or system
+- IAM Group — Group of IAM Users
+- IAM Role — Not a user. Identity with specific permissions
+- MFA (Multi-factor authentication) - Requiring two or more proofs of identity to log in
+
+## Policies
+
+- Identity-based Policies — Attach to users, groups, or roles to define what they can do.
+- Resource-based Policies — Attach directly to resources like S3 buckets to grant cross-account access.
+
+## Account Tiers
+
+- 12 months free tier — New accounts get limited free usage of popular services for one year.
+- Always free — Selected services remain free within monthly usage limits indefinitely.
+- Short-term trials — Time-limited access to premium services before standard charges apply.
 
 # AWS Services
 
