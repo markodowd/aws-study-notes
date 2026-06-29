@@ -1,5 +1,138 @@
 # Domain 2 - Fundamentals of GenAI
 
+## Neural Networks and Deep Learning
+
+- Input Layer
+- Hidden Layer
+- Output Layer
+
+- Deep Learning
+  - Neural Network with many hidden layers
+  - Backpropagation
+
+## Generative AI Models
+
+- Generative Adversarial Network (GAN)
+- Variational Autoencoder (VAE)
+- Transformer Model
+- Diffusion Model
+
+## Generative Adversarial Network (GAN)
+
+Random Noise > Generator > Synthetic Data > Discriminator > Classification
+                  ^ Adversarial Feedback                        ^ Real Data
+
+## Variational Autoencoder (VAE)
+
+- Complex neural network and advanced probability theory
+
+Input data > Encoder > Latent Space > Decoder
+                          ^               ^ Reconstructed Data
+                        Generated Data
+
+## VAE Use Cases
+
+- Anomaly Detection
+- Drug Discovery
+- Sound
+
+## Transformer Model
+
+- Input Embedding
+  - Converts token into a vector
+- Positional Encoding
+  - Unique numberical vector to each position
+- Encoder Stack
+  - Attemptes to understand meaning
+- Decoder Stack
+  - Generating an output sequence
+  - Masked self-attention
+  - Encoder-decoder attention
+  - Output generation
+
+Input Text > Input Embedding + Positional Encoding > Encoder Stack > Decoder Stack > Output Text
+
+- Transformer is a prediction engine
+
+## Diffusion Model
+
+- Forward Diffusion
+- Reverse Diffusion
+
+## Foundation Models
+
+- Large Language Model (LLM)
+- Multimodal
+
+## Training Foundation Models
+
+- Data Selection
+- Pretraining
+- Optimization
+  - Fine-tuning
+  - Retrieval-augmented generation
+- Evaluation
+- Deployment
+
+## Fine Tuning
+
+- Data Collection
+- Privacy and Security
+- Data Labeling
+- Training
+  - Instruction fine-tuning
+  - RLHF
+  - Iterate and Evaluate
+
+## Advanced Fine Tuning
+
+- Low-rank Adaptation (LoRA)
+- Representation fine-tuning (ReFT)
+
+## RAG
+
+- Data Collection and indexing
+- Chunking
+- Embedding Creation
+- Vector Database Storage
+- User input
+- Processing User Input
+- Retrieval
+- Augmentation
+- Response
+
+## AWS Vector Database Capabilities
+
+- Amazon OpenSearch Service
+- Amazon OpenSearch Serverless
+- Amazon Kendra
+
+## RAG Disadvantages
+
+- Not enough relevant data
+- Search limitations
+- Chunking problems
+
+## Evaluation
+
+- Human Evaluation
+  - User Experience
+  - Contextual Appropriateness
+  - Creativity and Flexibility
+  - Ethical Considerations
+  - Emotional Intelligence
+- Benchmark Datasets
+  - Accuracy
+  - Speed and Efficiency
+  - Scalability
+  - Responsible AI
+  - Robustness
+  - Generalization
+- Standard Evaluation Metrics
+  - Recall-Oriented Understudy for Gisting Evaluation (ROUGE)
+  - Bilingual Evaluation Understudy (BLEU)
+  - Bidirection encoder representations from transformers score (BERTScore)
+
 ## Task Statement 2.1: Explain the basic concepts of generative AI (GenAI).
 
 ### Define foundational GenAI concepts
