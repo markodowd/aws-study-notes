@@ -1,5 +1,262 @@
 # Domain 1 - Fundamentals of AI and ML
 
+## Understanding AI
+
+AI, also known as artificial intelligence, is a technology with humanlike problem-solving capabilities. AI in action appears to simulate human intelligence. It can recognise images, write poems, and make data-based predictions
+
+## Components of AI
+
+- Artificial Intelligence > Machine Learning > Deep Learning > Generative AI
+
+## Key Components of SageMaker
+
+- **SageMaker Studio**
+  - Web-based ML development environment
+  - Manage completew workflow in one place
+  - Team Collaboration and automation
+
+- **Notebook Instances**
+  - Managed Jupyter notebooks
+  - Code, experiment, and visualize
+  - No setup required
+
+- **JumpStart**
+  - Pretrained models and algorithms
+  - Quick-start solutions
+  - Fine-tuning for specific use cases
+
+- **Data Wrangler**
+  - Clean and transform data
+  - Connect to 50+ data sources
+  - Faster preprocessing workflows
+
+- **Model Monitor**
+  - Monitor deployed models
+  - Detect data drift automatically
+  - Alert on performance issues
+
+- **MLOps Tools
+  - Workflow automation
+  - Governance and version control
+  - End-to-end pipeline management
+
+## ML Lifecycle
+
+- Business Goal Identification
+  - KPIs
+- ML Problem Framing
+  - SMEs
+  - ML might be wrong approach compared to traditional data analytics or process automation
+- Data Processing
+  - Data stores/warehouses
+  - Amazon Redshift
+  - Lakehouse (Amazon SageMaker Lakehouse)
+  - Kinesis (real-time data processing)
+- Model Development
+- Model Deployment
+- Monitoring
+
+## Types of Data
+
+- Labeled Data
+- Unlabeled Data
+
+## Formats of Data
+
+- Structured Data
+- Unstructured Data
+
+## SageMaker Data Wrangler
+
+- Data preprocessing
+- Feature Engineering
+- Data Visualization
+
+## Model Development
+
+- Training
+- Evaluation
+- Tuning
+
+## Training
+
+- Supervised
+- Unsupervised
+- Reinforcement
+
+## Dataset
+
+- Training Data (70-80%)
+- Validating Data (10-15%)
+- Testing Data (10-15%)
+
+## Classification
+
+- Fraud Detection
+- Customer Churn Predicition
+- Image Recognition
+- Medical Diagnostics
+- Sentiment Analysis
+- Spam Filtering
+
+## Regression
+
+- Forecasting sales numbers
+- Estimating stock market trends
+- Predicting population growth
+- Calculating life expectancy
+
+## Regression Algorithms
+
+- Linear Regression 
+- Random Forest Regression 
+- Support Vector Regression (SVR)
+
+## Unsupervised
+
+- Clustering
+- Dimensionality Reduction
+
+## Clustering
+
+- Euclidean Distance
+- Cosine Similarity
+- Manhattan Distance
+
+## Clustering Algorithms
+
+- k-means Clustering
+- Density-based spatial clustering of applications with noise (DBSCAN)
+- Amazon's Random Cut Forest (RCF)
+
+## Dimensionality Reduction
+
+- Overfitting
+
+## Dimensionality Reduction Algorithms
+
+- Principal component analysis (PCA)
+- t-SNE
+- Autoencoders
+
+## Reinforcement Learning
+
+- Games
+- Robotics
+
+## ML Methods
+
+- Supervised Learning
+  - Classification
+  - Regression
+- Unsupervised Learning
+  - Clustering
+  - Dimensionality Reduction
+- Reinforcement Learning
+
+## SageMaker Options
+
+- Pretrained Models
+  - Foundation Models (FMs)
+  - Computer Vision Models
+  - NLP
+- Built-in Algorithms
+- Docker Images
+
+## Evaluation
+
+- Model Fit
+  - Overfitting
+  - Underfitting
+- Classification
+  - Confusion Matrix
+  - Accuracy
+  - Recall
+  - Area Under the Curve-Receiver Operating Curve (AUC-ROC)
+- Regression
+
+## Confusion Matrix
+
+- True Positives
+- False Negatives
+- False Positives
+- True Negatives (TN)
+
+- Accuracy (score)
+  - (TP + TN) / (TP + FN + FP + TN)
+- Precision
+  - TP / (TP + FP)
+- Recall
+  - TP / (TP + FN)
+- AUC-ROC
+  - Recall against FP
+- Regression
+  - Mean Squared Error (MSE)
+  - R Squared
+
+## Tuning
+
+- Batch Size
+- Learning Rate
+- Neural Network
+
+## Hyperparameter Optimization
+
+- Grid Search
+- Random Search
+- Bayesian Optimization
+- Optuna
+
+## Model Deployent
+
+- Self-hosted API
+- Managed API
+
+## Inferencing
+
+- Real-time Inference
+- Batch Transform
+- Asynchronous Inference
+- On-demand Serverless Inference
+
+## Monitoring
+
+- Data Drift
+- Concept Drift
+- Label Shift
+- Feature Drift
+
+## MLOps
+
+- Practices
+- Processes
+- Automations (ML Lifecycle)
+
+## SafeMaker MLOps
+
+- SageMaker Feature Store
+- SageMaker Experiments
+- SageMaker Processing
+- SageMaker Model Registry
+
+## AWS Development Tools
+
+- SageMaker Notebook Instances
+- SageMaker Studio Classic
+
+## AWS ML Services
+
+- Amazon Comprehend
+- Amazon Translate
+- Amazon Textract
+- Amazon Lex
+- Amazon Polly
+- Amazon Transcribe
+- Amazon Rekognition
+- Amazon Kendra
+- Amazon Personalize
+- AWS DeepRacer
+
 ## Task Statement 1.1: Explain basic AI concepts and terminologies.
 
 ### Define basic AI terms
