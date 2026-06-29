@@ -6,13 +6,13 @@ AI, also known as artificial intelligence, is a technology with humanlike proble
 
 ## Components of AI
 
-- Artificial Intelligence > Machine Learning > Deep Learning > Generative AI
+- Artificial Intelligence > Machine Learning > Deep Learning > Generative AI — each is a narrower subset nested within the broader field before it.
 
 ## Key Components of SageMaker
 
 - **SageMaker Studio**
   - Web-based ML development environment
-  - Manage completew workflow in one place
+  - Manage complete workflow in one place
   - Team Collaboration and automation
 
 - **Notebook Instances**
@@ -42,220 +42,220 @@ AI, also known as artificial intelligence, is a technology with humanlike proble
 
 ## ML Lifecycle
 
-- Business Goal Identification
-  - KPIs
-- ML Problem Framing
-  - SMEs
-  - ML might be wrong approach compared to traditional data analytics or process automation
-- Data Processing
-  - Data stores/warehouses
-  - Amazon Redshift
-  - Lakehouse (Amazon SageMaker Lakehouse)
-  - Kinesis (real-time data processing)
-- Model Development
-- Model Deployment
-- Monitoring
+- Business Goal Identification — define the business outcome the ML project must deliver before any modeling begins.
+  - KPIs — measurable indicators used to judge whether the business goal is being met.
+- ML Problem Framing — translate the business goal into a concrete ML task with defined inputs and outputs.
+  - SMEs — subject matter experts who provide domain knowledge to frame the problem correctly.
+  - ML might be wrong approach compared to traditional data analytics or process automation — always check that ML adds value over simpler deterministic alternatives.
+- Data Processing — collect, clean, and prepare the data needed to train a model.
+  - Data stores/warehouses — centralized repositories that hold the structured data used for analysis and training.
+  - Amazon Redshift — AWS's managed cloud data warehouse for large-scale analytical queries.
+  - Lakehouse (Amazon SageMaker Lakehouse) — unifies data lake and warehouse storage under a single queryable layer.
+  - Kinesis (real-time data processing) — ingests and processes streaming data as it arrives.
+- Model Development — train, evaluate, and tune the model on the prepared data.
+- Model Deployment — package the trained model and serve it for predictions in production.
+- Monitoring — track the deployed model's performance and data quality over time.
 
 ## Types of Data
 
-- Labeled Data
-- Unlabeled Data
+- Labeled Data — data points that include the known correct answer, required for supervised learning.
+- Unlabeled Data — data without target answers, used for unsupervised learning to find patterns.
 
 ## Formats of Data
 
-- Structured Data
-- Unstructured Data
+- Structured Data — organized into a fixed schema of rows and columns that is easy to query.
+- Unstructured Data — free-form content like text, images, or audio with no predefined schema.
 
 ## SageMaker Data Wrangler
 
-- Data preprocessing
-- Feature Engineering
-- Data Visualization
+- Data preprocessing — cleaning and transforming raw data into a model-ready form.
+- Feature Engineering — creating and selecting the input variables that best help a model learn.
+- Data Visualization — charting data to spot distributions, outliers, and relationships.
 
 ## Model Development
 
-- Training
-- Evaluation
-- Tuning
+- Training — feeding data to the algorithm so it learns patterns and sets its parameters.
+- Evaluation — measuring how well the trained model performs on held-out data.
+- Tuning — adjusting hyperparameters to improve the model's performance.
 
 ## Training
 
-- Supervised
-- Unsupervised
-- Reinforcement
+- Supervised — learns from labeled input-output pairs to predict outcomes.
+- Unsupervised — finds structure or groupings in unlabeled data.
+- Reinforcement — learns by trial and error using rewards from an environment.
 
 ## Dataset
 
-- Training Data (70-80%)
-- Validating Data (10-15%)
-- Testing Data (10-15%)
+- Training Data (70-80%) — the portion used to fit the model's parameters.
+- Validating Data (10-15%) — used to tune hyperparameters and compare models during development.
+- Testing Data (10-15%) — held back to give an unbiased estimate of final performance.
 
 ## Classification
 
-- Fraud Detection
-- Customer Churn Predicition
-- Image Recognition
-- Medical Diagnostics
-- Sentiment Analysis
-- Spam Filtering
+- Fraud Detection — flag transactions as fraudulent or legitimate.
+- Customer Churn Prediction — predict whether a customer will leave or stay.
+- Image Recognition — assign images to predefined categories.
+- Medical Diagnostics — classify whether a condition is present from medical data.
+- Sentiment Analysis — categorize text as positive, negative, or neutral.
+- Spam Filtering — separate unwanted spam messages from legitimate ones.
 
 ## Regression
 
-- Forecasting sales numbers
-- Estimating stock market trends
-- Predicting population growth
-- Calculating life expectancy
+- Forecasting sales numbers — predict future sales as a continuous value.
+- Estimating stock market trends — model continuous movements in market prices.
+- Predicting population growth — project a continuous numeric population over time.
+- Calculating life expectancy — estimate a continuous lifespan value from input factors.
 
 ## Regression Algorithms
 
-- Linear Regression 
-- Random Forest Regression 
-- Support Vector Regression (SVR)
+- Linear Regression — fits a straight-line relationship between features and a numeric target.
+- Random Forest Regression — averages many decision trees to predict a continuous value.
+- Support Vector Regression (SVR) — fits a margin-based function to predict numeric outputs.
 
 ## Unsupervised
 
-- Clustering
-- Dimensionality Reduction
+- Clustering — groups similar data points together without labels.
+- Dimensionality Reduction — compresses features while preserving important structure.
 
 ## Clustering
 
-- Euclidean Distance
-- Cosine Similarity
-- Manhattan Distance
+- Euclidean Distance — straight-line distance between points used to measure similarity.
+- Cosine Similarity — measures similarity by the angle between two vectors.
+- Manhattan Distance — sums absolute differences across dimensions (grid-like distance).
 
 ## Clustering Algorithms
 
-- k-means Clustering
-- Density-based spatial clustering of applications with noise (DBSCAN)
-- Amazon's Random Cut Forest (RCF)
+- k-means Clustering — partitions data into k groups around computed centroids.
+- Density-based spatial clustering of applications with noise (DBSCAN) — groups dense regions and labels sparse points as noise.
+- Amazon's Random Cut Forest (RCF) — an AWS algorithm that detects anomalies and clusters in data.
 
 ## Dimensionality Reduction
 
-- Overfitting
+- Overfitting — reducing dimensions helps combat overfitting by removing noisy, redundant features.
 
 ## Dimensionality Reduction Algorithms
 
-- Principal component analysis (PCA)
-- t-SNE
-- Autoencoders
+- Principal component analysis (PCA) — projects data onto fewer axes that capture the most variance.
+- t-SNE — reduces dimensions for visualization while preserving local point relationships.
+- Autoencoders — neural networks that learn a compressed encoding of the input data.
 
 ## Reinforcement Learning
 
-- Games
-- Robotics
+- Games — agents learn winning strategies through repeated play and rewards.
+- Robotics — agents learn physical control and movement through trial and error.
 
 ## ML Methods
 
-- Supervised Learning
-  - Classification
-  - Regression
-- Unsupervised Learning
-  - Clustering
-  - Dimensionality Reduction
-- Reinforcement Learning
+- Supervised Learning — trains on labeled data to predict known outcomes.
+  - Classification — predicts a discrete category.
+  - Regression — predicts a continuous numeric value.
+- Unsupervised Learning — finds patterns in data without labels.
+  - Clustering — groups similar data points.
+  - Dimensionality Reduction — reduces the number of input features.
+- Reinforcement Learning — learns optimal actions through rewards and penalties.
 
 ## SageMaker Options
 
-- Pretrained Models
-  - Foundation Models (FMs)
-  - Computer Vision Models
-  - NLP
-- Built-in Algorithms
-- Docker Images
+- Pretrained Models — ready-made models you can use or fine-tune without training from scratch.
+  - Foundation Models (FMs) — large general-purpose models adaptable to many tasks.
+  - Computer Vision Models — pretrained models for image and video tasks.
+  - NLP — pretrained models for natural language tasks.
+- Built-in Algorithms — SageMaker's optimized, ready-to-train algorithms for common ML problems.
+- Docker Images — bring your own custom training/inference code packaged in a container.
 
 ## Evaluation
 
-- Model Fit
-  - Overfitting
-  - Underfitting
-- Classification
-  - Confusion Matrix
-  - Accuracy
-  - Recall
-  - Area Under the Curve-Receiver Operating Curve (AUC-ROC)
-- Regression
+- Model Fit — how well the model generalizes from training data to new data.
+  - Overfitting — model memorizes training data and fails on unseen data.
+  - Underfitting — model is too simple to capture the underlying patterns.
+- Classification — metrics for evaluating category-prediction models.
+  - Confusion Matrix — table of correct vs. incorrect predictions per class.
+  - Accuracy — overall proportion of predictions that were correct.
+  - Recall — proportion of actual positives the model correctly identified.
+  - Area Under the Curve-Receiver Operating Curve (AUC-ROC) — measures class-separation ability across all thresholds.
+- Regression — metrics for evaluating continuous-value predictions.
 
 ## Confusion Matrix
 
-- True Positives
-- False Negatives
-- False Positives
-- True Negatives (TN)
+- True Positives — positives the model correctly predicted as positive.
+- False Negatives — actual positives the model wrongly predicted as negative.
+- False Positives — actual negatives the model wrongly predicted as positive.
+- True Negatives (TN) — negatives the model correctly predicted as negative.
 
-- Accuracy (score)
+- Accuracy (score) — share of all predictions that were correct.
   - (TP + TN) / (TP + FN + FP + TN)
-- Precision
+- Precision — of predicted positives, how many were actually correct.
   - TP / (TP + FP)
-- Recall
+- Recall — of actual positives, how many were correctly found.
   - TP / (TP + FN)
-- AUC-ROC
+- AUC-ROC — plots the true positive rate against the false positive rate.
   - Recall against FP
-- Regression
-  - Mean Squared Error (MSE)
-  - R Squared
+- Regression — error-based metrics for continuous predictions.
+  - Mean Squared Error (MSE) — average of the squared differences between predicted and actual values.
+  - R Squared — proportion of variance in the target explained by the model.
 
 ## Tuning
 
-- Batch Size
-- Learning Rate
-- Neural Network
+- Batch Size — number of samples processed before the model updates its weights.
+- Learning Rate — step size controlling how much weights change each update.
+- Neural Network — architecture choices like layer count and neurons per layer.
 
 ## Hyperparameter Optimization
 
-- Grid Search
-- Random Search
-- Bayesian Optimization
-- Optuna
+- Grid Search — exhaustively tries every combination in a defined parameter grid.
+- Random Search — samples random parameter combinations to find good values faster.
+- Bayesian Optimization — uses past results to intelligently choose the next parameters to try.
+- Optuna — an open-source framework that automates hyperparameter search.
 
-## Model Deployent
+## Model Deployment
 
-- Self-hosted API
-- Managed API
+- Self-hosted API — you deploy and manage the model on your own compute.
+- Managed API — a fully managed endpoint handles serving and scaling for you.
 
 ## Inferencing
 
-- Real-time Inference
-- Batch Transform
-- Asynchronous Inference
-- On-demand Serverless Inference
+- Real-time Inference — synchronous, low-latency predictions for live requests.
+- Batch Transform — offline predictions over a large dataset at once.
+- Asynchronous Inference — queues longer-running requests and returns results later.
+- On-demand Serverless Inference — auto-scales and bills per request with no managed servers.
 
 ## Monitoring
 
-- Data Drift
-- Concept Drift
-- Label Shift
-- Feature Drift
+- Data Drift — input data distribution changes from what the model was trained on.
+- Concept Drift — the relationship between inputs and the target changes over time.
+- Label Shift — the distribution of the target labels changes.
+- Feature Drift — the distribution of individual input features changes.
 
 ## MLOps
 
-- Practices
-- Processes
-- Automations (ML Lifecycle)
+- Practices — disciplines like versioning, testing, and reproducibility applied to ML.
+- Processes — standardized, repeatable workflows for building and shipping models.
+- Automations (ML Lifecycle) — automating each lifecycle stage from data prep to retraining.
 
-## SafeMaker MLOps
+## SageMaker MLOps
 
-- SageMaker Feature Store
-- SageMaker Experiments
-- SageMaker Processing
-- SageMaker Model Registry
+- SageMaker Feature Store — central repository to store, share, and reuse ML features.
+- SageMaker Experiments — tracks and compares training runs and their parameters.
+- SageMaker Processing — runs managed data processing and evaluation jobs.
+- SageMaker Model Registry — catalogs, versions, and manages model approval for deployment.
 
 ## AWS Development Tools
 
-- SageMaker Notebook Instances
-- SageMaker Studio Classic
+- SageMaker Notebook Instances — managed Jupyter notebooks for coding and experimentation.
+- SageMaker Studio Classic — the earlier integrated web IDE for ML development.
 
 ## AWS ML Services
 
-- Amazon Comprehend
-- Amazon Translate
-- Amazon Textract
-- Amazon Lex
-- Amazon Polly
-- Amazon Transcribe
-- Amazon Rekognition
-- Amazon Kendra
-- Amazon Personalize
-- AWS DeepRacer
+- Amazon Comprehend — NLP service for sentiment, entities, and key phrases in text.
+- Amazon Translate — neural machine translation between languages.
+- Amazon Textract — extracts text, forms, and tables from documents (OCR).
+- Amazon Lex — builds conversational chatbots and voice bots.
+- Amazon Polly — converts text into natural-sounding speech.
+- Amazon Transcribe — converts speech audio into text.
+- Amazon Rekognition — analyzes images and video for objects, faces, and moderation.
+- Amazon Kendra — intelligent enterprise search with natural-language Q&A.
+- Amazon Personalize — delivers real-time personalized recommendations.
+- AWS DeepRacer — a reinforcement-learning racing car for hands-on ML learning.
 
 ## Task Statement 1.1: Explain basic AI concepts and terminologies.
 
