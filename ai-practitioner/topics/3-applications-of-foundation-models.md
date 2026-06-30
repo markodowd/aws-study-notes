@@ -58,6 +58,142 @@
 - Cost — weigh whether AI's accuracy gains justify its development and inference expense.
 - Nondeterminism (healthcare) — avoid AI where unpredictable outputs are unacceptable for safety-critical decisions.
 
+## Amazon Bedrock
+
+- Model Provider — the company that built a hosted FM, such as Anthropic, Meta, or Amazon.
+- Modality — the input/output type a model handles, like text, image, or multimodal.
+- Chat/Text Playground — a console workspace for interactively testing prompts against a model.
+  - Mode — choose between conversational chat or single-turn text completion.
+  - Select Model — pick which provider's FM to run in the playground session.
+
+## Configuration Options
+
+- Temperature — controls output randomness, with lower values giving more deterministic responses.
+- Top P — restricts sampling to the smallest set of tokens whose cumulative probability meets the threshold.
+- Top K — limits sampling to the K most likely next tokens.
+- Response Length — caps the maximum number of tokens the model generates.
+- Stop Sequences — strings that immediately halt generation when produced.
+- Guardrails — configurable safety policies that filter harmful or unwanted model behavior.
+  - Content Filtering — blocks categories of harmful content like hate, violence, or sexual material.
+  - Sensitive Information Protection — detects and redacts PII and other sensitive data.
+  - Multilingual Support — applies guardrail policies across multiple languages.
+  - Prompt and Response Protection — screens both user inputs and model outputs against the policy.
+
+## Image/Video Playground
+
+- Generate Image — creates a new image from a text prompt.
+- Generate Variations — produces alternative versions of an existing image.
+- Remove Object — erases an unwanted element from an image and fills the gap.
+- Replace Background — swaps the scene behind the main subject.
+- Replace Object — substitutes one element in an image for another via prompt.
+- Generate Video — creates a short video clip from a prompt or source image.
+
+- Negative Prompts — specify what the model should avoid including in the output.
+- Response Image — an input image supplied to guide or condition the generation.
+- Advanced Configuration — extra controls for fine-tuning generation behavior.
+  - Prompt Strength — how closely the output adheres to the prompt versus the source image.
+  - Seed — a fixed value that makes image generation reproducible.
+
+## Choosing an FM
+
+- Categories — the task types a model supports, such as text, chat, or embeddings.
+- Last Version — the most recent model release, usually offering the best quality.
+- Language — the languages a model is trained to understand and generate.
+- Max Tokens — the context window size limiting combined input and output length.
+
+## License Types
+
+- Apache 2.0 — permissive open-source license allowing commercial use with patent protection.
+- MIT license — minimal permissive license allowing nearly unrestricted reuse.
+- GNU General Public License (GPL) — copyleft license requiring derivative works to stay open source.
+
+## License Advantages
+
+- Transparency — open licenses let you inspect how the model works.
+- Innovation — community access accelerates improvement and experimentation.
+- Customization — freedom to modify and adapt the model to your needs.
+
+## Measuring Success: Business Goals and Metrics
+
+- User Satisfaction — how happy users are with the AI-powered experience.
+  - Customer Satisfaction Score (CSAT) — a direct post-interaction rating of satisfaction.
+  - Net Promoter Score (NPS) — measures how likely users are to recommend the product.
+- Average Revenue per User (ARPU) — average income generated per active user.
+- Conversion Rate — the share of users who complete a desired action.
+  - Optimized Content — AI-tailored content that drives more conversions.
+  - Search — improved search relevance that helps users find and buy.
+  - Dynamic pricing — AI-adjusted prices that maximize conversions and revenue.
+  - Automated A/B testing — automatically testing variants to find what converts best.
+- Efficiency — output or cost savings gained from automation.
+
+## Model Customization
+
+- Distillation — train a smaller student model to mimic a larger teacher model.
+  - Efficiency — lower inference cost and latency from the smaller model.
+  - Edge — small enough to run on resource-constrained or on-device deployments.
+- Fine-Tuning — adapt a pre-trained model's weights on task-specific labeled data.
+
+## Bedrock Hyperparameters
+
+- Learning Rate — how large each weight-update step is during training.
+- Epoch — one full pass over the training dataset.
+- Batch Size — the number of examples processed before each weight update.
+
+## Continued Pretraining
+
+- Further pre-train a model on domain-specific unlabeled text to absorb specialized knowledge.
+
+## Agents in Amazon Bedrock
+
+- Managed framework where an FM reasons, plans, and calls tools to complete multi-step tasks.
+
+## Multiagent Collaboration
+
+- Multiple specialized agents coordinate, with a supervisor delegating subtasks to complete a goal.
+- Pricing — how you pay for agent and model usage.
+  - On Demand — pay per request with no commitment.
+  - Provisioned Throughput — reserved capacity for predictable, high-volume workloads.
+
+## Amazon Q
+
+- Amazon Q Business — generative AI assistant that answers questions over enterprise data.
+  - Unified Search — searches across connected enterprise sources from one interface.
+  - Amazon Q Apps — lets users build lightweight AI apps from natural-language descriptions.
+  - Application Tasks — performs actions in connected business applications.
+- Amazon Q Developer — AI coding assistant for writing, debugging, and modernizing software.
+
+## The Anatomy of a Prompt
+
+- Instructions — the directive telling the model what task to perform.
+- Context — background information that helps the model respond accurately.
+- Input Data — the specific content the model should process.
+- Output Indicator — a cue specifying the desired format or start of the response.
+
+## Best Practices for Prompting
+
+- Be Clear — state the task precisely to avoid ambiguous results.
+- Avoid Leading Questions — phrase neutrally so you don't bias the answer.
+- Use Analogies or Comparisons — relate concepts to familiar ideas for better understanding.
+- Ask for Alternatives — request multiple options to explore different responses.
+- Use Prompt Templates — reusable structures with placeholders for repeatable prompting.
+  - Consistency — templates produce uniform outputs across requests.
+  - Efficiency — templates save time by reusing proven prompt structures.
+  - Clarity — templates enforce a clear, organized prompt format.
+
+## Prompting Techniques
+
+- Zero-Shot Prompting — ask the model to perform a task with no examples.
+- Few-Shot Prompting — provide a few examples to demonstrate the desired pattern.
+- Chain-of-Thought Prompting (CoT) — prompt the model to reason step by step before answering.
+
+## Security Issues
+
+- Model Poisoning — corrupting training data to embed malicious behavior in the model.
+- Hijacking and Prompt Injection — crafted inputs that override the model's intended instructions.
+- Exposure — unintended disclosure of sensitive data through model outputs.
+- Prompt Leaking — tricking the model into revealing its hidden system prompt.
+- Jailbreaking — bypassing safety guardrails to elicit prohibited content.
+
 ## Task Statement 3.1: Describe design considerations for applications that use foundation models (FMs).
 
 ### Identify selection criteria to choose FMs
