@@ -3,38 +3,79 @@
 ## Neural Networks and Deep Learning
 
 - Input Layer
+  - Receives the raw data features fed into the network.
 - Hidden Layer
+  - Intermediate layers that transform inputs by learning weighted patterns.
 - Output Layer
+  - Produces the final prediction or classification.
 
 - Deep Learning
   - Neural Network with many hidden layers
+    - Stacking many layers lets the model learn increasingly abstract representations.
   - Backpropagation
+    - Algorithm that adjusts weights by propagating prediction error backward through the network.
+
+```mermaid
+flowchart LR
+    subgraph IN["Input Layer"]
+        x1((x1))
+        x2((x2))
+        x3((x3))
+    end
+    subgraph HID["Hidden Layers"]
+        h1((h)) --> h3((h))
+        h2((h)) --> h4((h))
+    end
+    subgraph OUT["Output Layer"]
+        y((y))
+    end
+    x1 --> h1 & h2
+    x2 --> h1 & h2
+    x3 --> h1 & h2
+    h3 --> y
+    h4 --> y
+    OUT -. "backpropagation adjusts weights" .-> IN
+```
 
 ## Generative AI Models
 
 - Generative Adversarial Network (GAN)
+  - Two networks compete to generate realistic synthetic data.
 - Variational Autoencoder (VAE)
+  - Encodes data into a probabilistic latent space and decodes it to generate new samples.
 - Transformer Model
+  - Uses attention to process sequences in parallel; the basis of modern LLMs.
 - Diffusion Model
+  - Generates data by gradually denoising random noise.
 
 ## Generative Adversarial Network (GAN)
 
-Random Noise > Generator > Synthetic Data > Discriminator > Classification
-                  ^ Adversarial Feedback                        ^ Real Data
+```mermaid
+flowchart LR
+    N[Random Noise] --> G[Generator] --> S[Synthetic Data] --> D[Discriminator]
+    R[Real Data] --> D
+    D --> C["Classification<br/>(Real / Fake)"]
+    C -. "adversarial feedback" .-> G
+```
 
 ## Variational Autoencoder (VAE)
 
 - Complex neural network and advanced probability theory
 
-Input data > Encoder > Latent Space > Decoder
-                          ^               ^ Reconstructed Data
-                        Generated Data
+```mermaid
+flowchart LR
+    I[Input Data] --> E[Encoder] --> L[Latent Space] --> Dec[Decoder] --> R[Reconstructed Data]
+    L -. sample .-> Gen[Generated Data]
+```
 
 ## VAE Use Cases
 
 - Anomaly Detection
+  - Flags data that deviates from the learned normal distribution.
 - Drug Discovery
+  - Generates novel molecular structures within a learned chemical space.
 - Sound
+  - Synthesizes and reconstructs audio signals.
 
 ## Transformer Model
 
@@ -50,88 +91,246 @@ Input data > Encoder > Latent Space > Decoder
   - Encoder-decoder attention
   - Output generation
 
-Input Text > Input Embedding + Positional Encoding > Encoder Stack > Decoder Stack > Output Text
+```mermaid
+flowchart LR
+    T[Input Text] --> EMB["Input Embedding<br/>+ Positional Encoding"] --> ENC[Encoder Stack] --> DEC[Decoder Stack] --> O[Output Text]
+```
 
 - Transformer is a prediction engine
 
 ## Diffusion Model
 
 - Forward Diffusion
+  - Progressively adds noise to training data until it becomes pure noise.
 - Reverse Diffusion
+  - Learns to remove noise step by step to generate new data.
+
+```mermaid
+flowchart LR
+    subgraph FWD["Forward Diffusion (training)"]
+        direction LR
+        Img[Image] -->|+noise| F1[...] -->|+noise| N1[Pure Noise]
+    end
+    subgraph REV["Reverse Diffusion (generation)"]
+        direction LR
+        N2[Pure Noise] -->|−noise| R1[...] -->|−noise| Gen[Generated Image]
+    end
+```
 
 ## Foundation Models
 
 - Large Language Model (LLM)
+  - Text-focused FM trained on massive corpora to understand and generate language.
 - Multimodal
+  - FM that handles multiple data types such as text, images, and audio.
 
 ## Training Foundation Models
 
 - Data Selection
+  - Curating high-quality, relevant data for training.
 - Pretraining
+  - Training the base model on broad unlabeled data to learn general patterns.
 - Optimization
+  - Adapting the pretrained model to perform better on target tasks.
   - Fine-tuning
+    - Further training on labeled domain data to specialize the model.
   - Retrieval-augmented generation
+    - Augmenting prompts with external retrieved data instead of retraining.
 - Evaluation
+  - Measuring model quality against metrics and human judgment.
 - Deployment
+  - Serving the model for production inference.
 
 ## Fine Tuning
 
 - Data Collection
+  - Gathering domain-specific examples for the fine-tuning dataset.
 - Privacy and Security
+  - Protecting sensitive data and removing PII before training.
 - Data Labeling
+  - Annotating examples so the model learns the desired outputs.
 - Training
+  - Updating model weights on the prepared dataset.
   - Instruction fine-tuning
+    - Training on prompt-response pairs to follow instructions.
   - RLHF
+    - Reinforcement Learning from Human Feedback aligns outputs to human preferences.
   - Iterate and Evaluate
+    - Repeatedly assess and refine the model until quality targets are met.
 
 ## Advanced Fine Tuning
 
 - Low-rank Adaptation (LoRA)
+  - Efficiently fine-tunes by training small low-rank weight matrices instead of all parameters.
 - Representation fine-tuning (ReFT)
+  - Adapts the model by editing its internal hidden representations rather than weights.
 
 ## RAG
 
 - Data Collection and indexing
+  - Gathering source documents and organizing them for retrieval.
 - Chunking
+  - Splitting documents into smaller passages.
 - Embedding Creation
+  - Converting each chunk into a vector representation.
 - Vector Database Storage
+  - Storing embeddings for fast similarity search.
 - User input
+  - The query or prompt submitted by the user.
 - Processing User Input
+  - Embedding the query to match it against stored vectors.
 - Retrieval
+  - Fetching the most relevant chunks from the vector database.
 - Augmentation
+  - Adding retrieved context to the prompt sent to the model.
 - Response
+  - The model generates an answer grounded in the retrieved context.
+
+```mermaid
+flowchart LR
+    subgraph OFF["Offline indexing"]
+        D[Documents] --> C[Chunking] --> E[Embeddings] --> V[(Vector Database)]
+    end
+    Q[User Query] --> QE[Embed] --> R[Retrieve relevant chunks]
+    V -. "similarity search" .-> R
+    R --> A["Augment prompt<br/>(query + context)"] --> FM[FM] --> Resp[Grounded Response]
+```
 
 ## AWS Vector Database Capabilities
 
 - Amazon OpenSearch Service
+  - Managed search and analytics engine with vector search support.
 - Amazon OpenSearch Serverless
+  - On-demand, auto-scaling OpenSearch for vector workloads without managing capacity.
 - Amazon Kendra
+  - Managed intelligent search service that retrieves answers from enterprise content.
 
 ## RAG Disadvantages
 
 - Not enough relevant data
+  - Retrieval fails when the knowledge base lacks coverage of the query.
 - Search limitations
+  - Poor retrieval ranking surfaces irrelevant or low-quality context.
 - Chunking problems
+  - Badly sized chunks split or dilute meaning, hurting answer accuracy.
 
 ## Evaluation
 
 - Human Evaluation
+  - People judge output quality on dimensions automated metrics miss.
   - User Experience
+    - How satisfying and usable the model's responses are.
   - Contextual Appropriateness
+    - Whether answers fit the situation and intent.
   - Creativity and Flexibility
+    - Ability to produce novel and varied responses.
   - Ethical Considerations
+    - Whether outputs avoid harm, bias, and policy violations.
   - Emotional Intelligence
+    - Sensitivity to tone and human emotional cues.
 - Benchmark Datasets
+  - Standardized datasets used to compare models on common dimensions.
   - Accuracy
+    - Correctness of the model's outputs.
   - Speed and Efficiency
+    - How quickly and cheaply the model produces results.
   - Scalability
+    - How well performance holds as load increases.
   - Responsible AI
+    - Fairness, safety, and transparency of outputs.
   - Robustness
+    - Stability of performance under noisy or adversarial inputs.
   - Generalization
+    - Ability to perform well on unseen data.
 - Standard Evaluation Metrics
+  - Automated scores quantifying generated text against references.
   - Recall-Oriented Understudy for Gisting Evaluation (ROUGE)
+    - Measures overlap with reference text, used mainly for summarization.
   - Bilingual Evaluation Understudy (BLEU)
+    - Measures n-gram overlap with references, used mainly for translation.
   - Bidirection encoder representations from transformers score (BERTScore)
+    - Uses embeddings to score semantic similarity rather than exact word overlap.
+
+## Benchmark Metrics (Hugging Face)
+
+### Issues with benchmark metrics
+
+- Prompts
+  - Small change has major impact on results
+    - Sensitivity to wording makes scores hard to reproduce.
+- Copying
+  - Benchmark data leaking into training inflates scores artificially.
+- Real-world application
+  - High benchmark scores may not translate to practical performance.
+- Narrowness
+  - A single metric captures only a thin slice of capability.
+- Edge Cases
+  - Benchmarks often miss rare or unusual inputs that break models.
+
+## Capabilities of Generative AI
+
+- Adaptability
+  - One model can handle many different tasks via prompting.
+- Responsiveness
+  - Provides fast, real-time natural language interaction.
+- Simplicity
+  - Natural language interfaces make AI easy to use.
+- Data Efficiency
+  - Needs little or no labeled data compared to training from scratch.
+- Personalization
+  - Tailors outputs to individual users and contexts.
+- Scalability
+  - Serves many users and use cases on managed infrastructure.
+
+## Drawbacks of Generative AI
+
+- Hallucinations
+  - Confidently generates false or fabricated information.
+- Nondeterminism
+  - The same prompt can yield different outputs each time.
+- Interpretability
+  - Hard to explain why the model produced a given output.
+- Data security and privacy
+  - Risk of leaking sensitive data through prompts or outputs.
+- Social and branding risks
+  - Inappropriate or off-brand outputs can damage reputation.
+- Limited context windows
+  - Only a finite amount of input can be processed at once.
+- Recency
+  - Knowledge is frozen at the training cutoff and may be outdated.
+- Costs
+  - Token usage and compute can become expensive at scale.
+- Data Challenge
+  - High-quality training and grounding data is hard to obtain and prepare.
+
+## Evolution of FMs
+
+- System 1 thinking
+  - Fast, intuitive, automatic responses with little deliberation.
+- System 2 thinking
+  - Slow, deliberate, step-by-step reasoning for complex problems.
+
+## Multi-agent Example
+
+- Customer Interaction Agent
+  - Handles direct conversation with the customer.
+- Issue Categorization Agent
+  - Classifies the request into the correct issue type.
+- Sentiment Analysis Agent
+  - Detects the customer's emotional tone to guide handling.
+- Resolution Monitoring Agent
+  - Tracks whether the issue is being resolved and escalates if not.
+
+## Artificial General Intellegence (AGI)
+
+- Efficiency
+  - Performs a wide range of tasks with minimal resources or retraining.
+- Interact with the environment
+  - Perceives and acts on the world like a human would.
+- Autonomous
+  - Sets and pursues goals without human direction.
+- Creativity
+  - Generates genuinely novel ideas and solutions.
 
 ## Task Statement 2.1: Explain the basic concepts of generative AI (GenAI).
 
@@ -251,6 +450,12 @@ Input Text > Input Embedding + Positional Encoding > Encoder Stack > Decoder Sta
 
 ### Describe the FM lifecycle
 
+```mermaid
+flowchart LR
+    DS[Data Selection] --> MS[Model Selection] --> PT[Pre-training] --> FT[Fine-tuning] --> EV[Evaluation] --> DP[Deployment] --> PU[Production Use]
+    PU -. feedback .-> DS
+```
+
 - **Data selection**
   - Identify datasets for pre-training, fine-tuning, or RAG grounding
   - Criteria: relevance, quality, diversity, licensing, privacy, bias risk
@@ -366,12 +571,31 @@ Input Text > Input Embedding + Positional Encoding > Encoder Stack > Decoder Sta
   - Goes beyond single prompt-response to iterative reasoning and action
   - Built on FMs with orchestration, memory, and tool integration layers
 
+```mermaid
+flowchart TD
+    R["Reason (plan)"] --> A["Act (call tool)"] --> O["Observe (result)"] --> Q{Goal met?}
+    Q -- no --> R
+    Q -- yes --> F[Final Answer]
+```
+
 - **Multi-agent system patterns**
   - **Single agent**: one FM with tools handles entire workflow
   - **Supervisor pattern**: orchestrator agent delegates subtasks to specialist agents
   - **Collaborative pattern**: multiple agents discuss or vote on solutions
   - **Pipeline pattern**: agents pass outputs sequentially (research → draft → review)
   - Use when tasks are too complex for one agent or require specialized capabilities
+
+```mermaid
+flowchart LR
+    U[User Request] --> S[Supervisor]
+    S --> A["Agent A<br/>(research)"]
+    S --> B["Agent B<br/>(drafting)"]
+    S --> C["Agent C<br/>(review)"]
+    A --> S
+    B --> S
+    C --> S
+    S --> F[Final Response]
+```
 
 - **Model Context Protocol (MCP)**
   - Open standard for connecting AI agents to external data sources and tools
