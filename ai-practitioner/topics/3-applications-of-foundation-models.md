@@ -1,5 +1,63 @@
 # Domain 3 - Applications of Foundation Models
 
+## Computer Vision
+
+- Amazon Rekognition — managed service for analyzing images and video without ML expertise.
+  - Label Detection — identifies objects, scenes, and activities in an image.
+  - Image Properties — measures quality attributes like brightness, sharpness, and dominant colors.
+  - Image Moderation — flags unsafe or inappropriate content such as nudity or violence.
+  - Face Comparison — measures similarity between faces across two images.
+  - Face Liveness — verifies a real person is present to prevent spoofing during authentication.
+  - Celebrity Recognition — identifies well-known public figures in images and video.
+
+## Natural Language Processing (NLP)
+
+- Lemmatization — reduces words to their dictionary base form (e.g., "running" → "run").
+- Stemming — chops words to a root by removing suffixes, often crudely (e.g., "running" → "runn").
+- Lowercasing — normalizes text to lowercase so casing differences don't create distinct tokens.
+- Stopword Removal — strips common low-value words like "the" and "is" to focus on meaningful terms.
+- Punctuation Removal — removes punctuation marks to clean and standardize text for processing.
+
+## AWS NLP Services
+
+- Amazon Comprehend — extracts entities, sentiment, key phrases, and topics from text.
+- Amazon Kendra — intelligent enterprise search service that returns precise answers from documents.
+- Amazon Lex — builds conversational chatbots and voice interfaces using the same tech as Alexa.
+- Amazon Polly — converts text into lifelike speech (text-to-speech).
+- Amazon Transcribe — converts speech audio into text (speech-to-text).
+- Amazon Translate — performs neural machine translation between languages.
+
+## Amazon Comprehend Use Cases
+
+- Voice of customer — analyzes reviews and feedback to gauge customer sentiment at scale.
+- Knowledgebase — organizes and indexes documents by topic and entity for retrieval.
+- Legal Analysis — extracts entities and clauses from contracts and legal documents.
+
+## Amazon Kendra
+
+- GenAI Enterprise Edition — higher-tier edition with generative AI features and larger document capacity.
+- Basic Enterprise Edition — standard intelligent search edition for enterprise document sets.
+
+- Factoid Questions — answers "who/what/when/where" queries with a specific fact.
+- Descriptive Questions — answers "how/why" queries requiring a longer explanatory passage.
+- Keyword and Natural Language Questions — handles both simple keyword lookups and full natural-language queries.
+
+## Intelligent Document Processing (IDP)
+
+- Digitization — converts physical or scanned documents into machine-readable digital text.
+- Extraction — pulls structured fields and data from unstructured documents.
+- Validation and Updates — verifies extracted data for accuracy and feeds corrections back into systems.
+
+## Fraud Detection
+
+- Amazon Fraud Detector — managed service that uses ML to identify potentially fraudulent online activity.
+
+## When to use AI?
+
+- Complexity — favor AI when rules are too numerous or nuanced to hand-code reliably.
+- Cost — weigh whether AI's accuracy gains justify its development and inference expense.
+- Nondeterminism (healthcare) — avoid AI where unpredictable outputs are unacceptable for safety-critical decisions.
+
 ## Task Statement 3.1: Describe design considerations for applications that use foundation models (FMs).
 
 ### Identify selection criteria to choose FMs
