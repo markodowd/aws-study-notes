@@ -1,5 +1,141 @@
 # Domain 5 - Security, Compliance, and Governance for AI Solutions
 
+## Overview of Security, Compliance, and Governance
+
+- Security - protecting AI systems, data, and infrastructure from unauthorized access and attacks.
+- Governance - internal policies and processes that direct how AI is built, used, and overseen.
+- Compliance - meeting external legal, regulatory, and industry standards for AI systems.
+
+## Security
+
+- Security approaches with AWS tools - layered defenses across data, identity, application, and network domains.
+- Data Protection
+  - KMS - managed encryption keys for encrypting data at rest and controlling key access.
+  - S3 Versioning - retains previous object versions to recover from deletion or corruption.
+  - ACM - provisions and manages TLS certificates for encrypting data in transit.
+  - PrivateLink - keeps traffic to AWS services on the private AWS network instead of the public internet.
+- Identity and Access Management
+  - IAM Roles - grant temporary, scoped permissions to services and users without long-lived credentials.
+  - MFA - requires a second authentication factor to reduce risk from compromised credentials.
+  - Least Privilege - grant only the minimum permissions needed to perform a task.
+- Application Protection
+  - AWS Shield - managed protection against DDoS attacks on applications.
+  - Cognito - user sign-up, sign-in, and access control for applications.
+- Threat detection and incident response
+  - GuardDuty - continuously monitors for malicious activity and anomalous behavior.
+  - Security Hub - aggregates and prioritizes security findings across AWS accounts.
+  - EventBridge - routes security events to trigger automated responses.
+  - Lambda - runs serverless code to automate remediation of detected threats.
+- Infrastructure Protection
+  - IAM Policies - define permissions that control which actions and resources are allowed.
+  - Network ACLs - stateless subnet-level rules that allow or deny network traffic.
+- Network and Edge Protection
+  - VPC - isolated virtual network for controlling connectivity to AI resources.
+  - WAF - filters malicious web requests before they reach applications.
+  - Limited Public Endpoints - minimize internet-facing exposure to reduce attack surface.
+
+## Generative AI Security Scoping Matrix
+
+- Scope 1: Consumer applications - using public third-party GenAI apps (e.g. ChatGPT) with least control.
+- Scope 2: Enterprise applications - GenAI features embedded in vendor SaaS tools you subscribe to.
+- Scope 3: Pretrained models - building on a foundation model via API without customization.
+- Scope 4: Fine-tuned models - adapting a foundation model with your own data.
+- Scope 5: Self-trained models - training a model from scratch, giving the most control and responsibility.
+
+## 5 Critical Security Disciplines
+
+- Governance and compliance - policies and oversight to meet organizational and regulatory obligations.
+- Legal and privacy - managing legal liability and protecting personal and sensitive data.
+- Risk Management - identifying, assessing, and mitigating risks unique to AI systems.
+- Controls - technical and procedural safeguards that enforce security requirements.
+- Resilience - ensuring AI systems recover from failures and continue operating reliably.
+
+## Security for AI and Generative AI
+
+- Threat detection - monitoring for malicious or anomalous activity targeting AI workloads.
+- Vulnerability Management - scanning and patching weaknesses in AI pipelines and dependencies.
+- Infrastructure Protection - isolating and hardening the compute and network hosting AI systems.
+- Prompt Injection Resistance - defending against malicious instructions embedded in inputs or documents.
+- Data Encryption - protecting data at rest and in transit with encryption.
+
+## AWS security tools and services for AI workloads
+
+- AWS Key Management Service - centrally creates and controls encryption keys for AI data and artifacts.
+- AWS Shield Advanced - enhanced DDoS protection with detection and response for critical workloads.
+- Amazon Macie - uses ML to discover and protect sensitive data in S3.
+- Zero trust and fine-grained access controls - verify every request and grant minimal, precise permissions.
+- Amazon SageMaker Role Manager - simplifies creating least-privilege IAM roles for ML activities.
+- Network security and data flow control - restrict and monitor how data moves between AI components.
+
+## Compliance Standards
+
+- National Institute of Standards and Technology (NIST) - US framework providing cybersecurity and AI risk standards.
+- European Union Agency for Cybersecurity (ENISA) - EU body issuing cybersecurity guidance and best practices.
+- International Organization for Standardization (ISO) - global standards bodies (e.g. ISO 27001, 42001) for security and AI management.
+- AWS System and Organization Controls (SOC) - audit reports attesting to AWS's security and operational controls.
+- Health Insurance Portability and Accountability Act (HIPAA) - US law protecting healthcare data privacy and security.
+- General Data Protection Regulation (GDPR) - EU regulation governing personal data privacy and user rights.
+- Payment Card Industry Data Security Standard (PCI DSS) - standard for securing cardholder payment data.
+
+## AI Compliance Challenges
+
+- Complexity and lack of transparency - "black box" models make it hard to explain or audit decisions.
+- Constant change - models, data, and regulations evolve rapidly, complicating ongoing compliance.
+- Emergent capabilities - models can exhibit unexpected behaviors not present during testing.
+- Accountability - unclear who is responsible when AI produces harmful or incorrect outcomes.
+
+## Regulated Workloads
+
+- Processes under oversight - workflows subject to regulatory or legal supervision.
+- Decisions with consequences - AI outputs that materially affect people's rights, finances, or safety.
+- Critical system usage - AI used in high-stakes domains like healthcare, finance, or infrastructure.
+- Liability from AI models - legal and financial responsibility for harms caused by model outputs.
+
+## AWS Compliance Tools
+
+- AWS Audit Manager - automates evidence collection to assess compliance against frameworks.
+- AWS Artifact - on-demand access to AWS compliance reports and agreements.
+- Amazon Inspector - automated vulnerability scanning of workloads and dependencies.
+- AWS Trusted Advisor - recommends fixes for security, cost, and best-practice gaps.
+
+## Governance - Data Governance Concepts
+
+- Data Lifecycles - managing data through creation, use, archival, and deletion stages.
+- Data Logging - recording data access and changes for auditability.
+- Data Residency - keeping data within required geographic or jurisdictional boundaries.
+- Data Monitoring - continuously tracking data quality, access, and usage.
+- Data Analysis - examining data to assess quality, bias, and fitness for use.
+- Data Retention - defining how long data is kept before deletion per policy and law.
+
+## AWS governance tools and services
+
+- AWS Organizations and service control policies (SCPs) - centrally enforce guardrails across all accounts.
+- AWS Control Tower - sets up and governs a secure, compliant multi-account environment.
+- AWS Config - records and evaluates resource configurations against compliance rules.
+- AWS CloudTrail - logs all API activity for auditing and forensic investigation.
+
+## Understanding data and model lineage
+
+- Source citation and data origins documentation - attributing outputs and datasets to their original sources.
+  - Source citation - referencing the specific documents that support a generated answer.
+  - Documenting data origins - recording where data came from and its usage rights.
+- Data lineage - tracking data from origin through every transformation to final model use.
+  - Cataloging - maintaining a searchable inventory of datasets with metadata.
+  - Model cards - standardized documentation of a model's data, performance, and limitations.
+
+## Review of data usage in generative AI
+
+- User data - inputs and interactions collected from end users during inference.
+- Fine-tuning data - curated data used to adapt a foundation model to a specific task.
+- Training data - the large corpus used to originally train a model from scratch.
+
+## Secure data engineering
+
+- Assessing data quality - validating completeness, accuracy, and consistency before use.
+- Implementing privacy-enhancing technologies - applying anonymization, masking, and similar techniques to protect individuals.
+- Data access control - restricting who can read or modify data with fine-grained permissions.
+- Data integrity - ensuring data is not tampered with or corrupted through checksums and versioning.
+
 ## Task Statement 5.1: Explain methods to secure AI systems.
 
 ### Identify AWS services and features to secure AI systems
