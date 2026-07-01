@@ -1,5 +1,94 @@
 # Domain 4 - Guidelines for Responsible AI
 
+## Risks of Generative AI
+
+- Toxicity — models can generate offensive, harmful, or hateful content.
+- Intellectual Property — outputs may reproduce or infringe copyrighted training material.
+- Plagiarism and Cheating — generative tools can produce work passed off as original human effort.
+- Disruption of the Nature of Work — automation shifts or displaces human roles and tasks.
+- Accuracy — outputs may be wrong, driven by:
+  - Bias — systematic errors that favor or disadvantage certain groups.
+  - Variance — sensitivity to training data that causes inconsistent predictions.
+
+## Bias/Variance Techniques
+
+- Cross validation — splits data into multiple folds to estimate generalization and reduce overfitting.
+- Increase data — more training examples lowers variance and improves generalization.
+- Regularization — penalizes model complexity to curb overfitting.
+- Simpler models — fewer parameters reduce variance at the cost of some bias.
+- Dimensionality reduction — removes redundant features to combat overfitting and noise.
+- Hyperparameter tuning — optimizes settings to balance bias and variance.
+- Feature selection — keeps only informative inputs to reduce noise and overfitting.
+
+## Elements of Responsible AI
+
+- Fairness — ensures equitable outcomes across individuals and demographic groups.
+- Explainability (XAI) — makes model decisions understandable to humans.
+- Privacy and Security — protects personal data and guards models against misuse.
+- Veracity and Robustness — outputs are truthful and reliable across varied conditions.
+- Governance — policies and oversight to manage AI risk and compliance.
+- Safety — prevents AI from causing physical, psychological, or societal harm.
+- Controllability — humans can monitor, override, and steer AI behavior.
+
+## The Benefits of Responsible AI
+
+- Building trust and enhancing brand image — ethical AI earns customer and public confidence.
+- Staying ahead of regulation — proactive practices ease compliance with emerging laws.
+- Reducing risk exposure — mitigates legal, financial, and reputational liabilities.
+- Standing out in the market — responsible AI becomes a competitive differentiator.
+- Smarter outcomes — fairer, higher-quality data and models yield better decisions.
+- Driving innovation — trustworthy foundations enable confident adoption of new use cases.
+
+## Amazon Tools for Responsible AI
+
+- Amazon Bedrock — provides Guardrails to enforce responsible AI at the application layer:
+  - Filtering content — blocks harmful categories like hate, violence, and misconduct.
+  - Redacting PII — detects and masks personal information in inputs and outputs.
+  - Implementing content safety and privacy policies — enforces configurable rules on model interactions.
+
+## SageMaker Clarify and Experiments
+
+- SageMaker Role Manager — defines and manages least-privilege IAM permissions for ML users.
+- SageMaker Model Cards — standardized documentation of a model's details, use, and risks.
+- SageMaker Model Dashboard — central view to monitor deployed models' health and governance.
+
+## Amazon Augmented AI (Amazon A2I)
+
+Adds human review workflows for low-confidence or high-risk model predictions.
+
+## SageMaker Model Monitor
+
+- Data quality drift — input data distribution diverges from the training baseline.
+- Model quality drift — prediction accuracy degrades against ground-truth labels over time.
+- Bias drift — fairness metrics worsen for demographic groups in production.
+- Feature attribution drift — the importance of input features shifts from the baseline.
+
+## Going Further with Responsible AI
+
+- Sustainability and Environmental Considerations — minimize the energy and carbon cost of training and inference.
+- Data Preparation — curate, clean, and balance data to reduce bias and improve quality.
+- Interpretability Versus Explainability — two distinct ways of understanding model behavior:
+  - Interpretability — understanding a model's inner mechanics directly.
+  - Explainability — describing why a specific decision was made, often via post-hoc tools.
+- Human-Centered Design (HCD) — designing AI around human needs and understanding:
+  - Clarity — make AI behavior and outputs easy to understand.
+  - Simplicity — reduce complexity so users can interact confidently.
+  - Usability — ensure the system is practical and effective to use.
+  - Reflexivity — critically examine the system's impact and assumptions.
+  - Accountability — assign clear responsibility for AI outcomes.
+  - Personalization — tailor experiences to individual users' needs.
+  - Cognitive apprenticeship — help users learn by making AI reasoning visible.
+  - User-centered tools — build interfaces grounded in real user requirements.
+
+## RLHF
+
+Reinforcement Learning from Human Feedback aligns models to human preferences, providing:
+
+- Enhanced model performance — human feedback tunes outputs toward higher quality.
+- Handling complex scenarios — human judgment guides nuanced or ambiguous cases.
+- Improved user satisfaction — responses better match human expectations and values.
+- Amazon SageMaker Ground Truth — managed service for collecting human feedback and labels.
+
 ## Task Statement 4.1: Explain the development of AI systems that are responsible.
 
 ### Identify features of responsible AI
