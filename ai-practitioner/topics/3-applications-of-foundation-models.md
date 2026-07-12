@@ -2,142 +2,142 @@
 
 ## Computer Vision
 
-- Amazon Rekognition — managed service for analyzing images and video without ML expertise.
-  - Label Detection — identifies objects, scenes, and activities in an image.
-  - Image Properties — measures quality attributes like brightness, sharpness, and dominant colors.
-  - Image Moderation — flags unsafe or inappropriate content such as nudity or violence.
-  - Face Comparison — measures similarity between faces across two images.
-  - Face Liveness — verifies a real person is present to prevent spoofing during authentication.
-  - Celebrity Recognition — identifies well-known public figures in images and video.
+- Amazon Rekognition - managed service for analyzing images and video without ML expertise.
+  - Label Detection - identifies objects, scenes, and activities in an image.
+  - Image Properties - measures quality attributes like brightness, sharpness, and dominant colors.
+  - Image Moderation - flags unsafe or inappropriate content such as nudity or violence.
+  - Face Comparison - measures similarity between faces across two images.
+  - Face Liveness - verifies a real person is present to prevent spoofing during authentication.
+  - Celebrity Recognition - identifies well-known public figures in images and video.
 
 ## Natural Language Processing (NLP)
 
-- Lemmatization — reduces words to their dictionary base form (e.g., "running" → "run").
-- Stemming — chops words to a root by removing suffixes, often crudely (e.g., "running" → "runn").
-- Lowercasing — normalizes text to lowercase so casing differences don't create distinct tokens.
-- Stopword Removal — strips common low-value words like "the" and "is" to focus on meaningful terms.
-- Punctuation Removal — removes punctuation marks to clean and standardize text for processing.
+- Lemmatization - reduces words to their dictionary base form (e.g., "running" → "run").
+- Stemming - chops words to a root by removing suffixes, often crudely (e.g., "running" → "runn").
+- Lowercasing - normalizes text to lowercase so casing differences don't create distinct tokens.
+- Stopword Removal - strips common low-value words like "the" and "is" to focus on meaningful terms.
+- Punctuation Removal - removes punctuation marks to clean and standardize text for processing.
 
 ## AWS NLP Services
 
-- Amazon Comprehend — extracts entities, sentiment, key phrases, and topics from text.
-- Amazon Kendra — intelligent enterprise search service that returns precise answers from documents.
-- Amazon Lex — builds conversational chatbots and voice interfaces using the same tech as Alexa.
-- Amazon Polly — converts text into lifelike speech (text-to-speech).
-- Amazon Transcribe — converts speech audio into text (speech-to-text).
-- Amazon Translate — performs neural machine translation between languages.
+- Amazon Comprehend - extracts entities, sentiment, key phrases, and topics from text.
+- Amazon Kendra - intelligent enterprise search service that returns precise answers from documents.
+- Amazon Lex - builds conversational chatbots and voice interfaces using the same tech as Alexa.
+- Amazon Polly - converts text into lifelike speech (text-to-speech).
+- Amazon Transcribe - converts speech audio into text (speech-to-text).
+- Amazon Translate - performs neural machine translation between languages.
 
 ## Amazon Comprehend Use Cases
 
-- Voice of customer — analyzes reviews and feedback to gauge customer sentiment at scale.
-- Knowledgebase — organizes and indexes documents by topic and entity for retrieval.
-- Legal Analysis — extracts entities and clauses from contracts and legal documents.
+- Voice of customer - analyzes reviews and feedback to gauge customer sentiment at scale.
+- Knowledgebase - organizes and indexes documents by topic and entity for retrieval.
+- Legal Analysis - extracts entities and clauses from contracts and legal documents.
 
 ## Amazon Kendra
 
-- GenAI Enterprise Edition — higher-tier edition with generative AI features and larger document capacity.
-- Basic Enterprise Edition — standard intelligent search edition for enterprise document sets.
+- GenAI Enterprise Edition - higher-tier edition with generative AI features and larger document capacity.
+- Basic Enterprise Edition - standard intelligent search edition for enterprise document sets.
 
-- Factoid Questions — answers "who/what/when/where" queries with a specific fact.
-- Descriptive Questions — answers "how/why" queries requiring a longer explanatory passage.
-- Keyword and Natural Language Questions — handles both simple keyword lookups and full natural-language queries.
+- Factoid Questions - answers "who/what/when/where" queries with a specific fact.
+- Descriptive Questions - answers "how/why" queries requiring a longer explanatory passage.
+- Keyword and Natural Language Questions - handles both simple keyword lookups and full natural-language queries.
 
 ## Intelligent Document Processing (IDP)
 
-- Digitization — converts physical or scanned documents into machine-readable digital text.
-- Extraction — pulls structured fields and data from unstructured documents.
-- Validation and Updates — verifies extracted data for accuracy and feeds corrections back into systems.
+- Digitization - converts physical or scanned documents into machine-readable digital text.
+- Extraction - pulls structured fields and data from unstructured documents.
+- Validation and Updates - verifies extracted data for accuracy and feeds corrections back into systems.
 
 ## Fraud Detection
 
-- Amazon Fraud Detector — managed service that uses ML to identify potentially fraudulent online activity.
+- Amazon Fraud Detector - managed service that uses ML to identify potentially fraudulent online activity.
 
 ## When to use AI?
 
-- Complexity — favor AI when rules are too numerous or nuanced to hand-code reliably.
-- Cost — weigh whether AI's accuracy gains justify its development and inference expense.
-- Nondeterminism (healthcare) — avoid AI where unpredictable outputs are unacceptable for safety-critical decisions.
+- Complexity - favor AI when rules are too numerous or nuanced to hand-code reliably.
+- Cost - weigh whether AI's accuracy gains justify its development and inference expense.
+- Nondeterminism (healthcare) - avoid AI where unpredictable outputs are unacceptable for safety-critical decisions.
 
 ## Amazon Bedrock
 
-- Model Provider — the company that built a hosted FM, such as Anthropic, Meta, or Amazon.
-- Modality — the input/output type a model handles, like text, image, or multimodal.
-- Chat/Text Playground — a console workspace for interactively testing prompts against a model.
-  - Mode — choose between conversational chat or single-turn text completion.
-  - Select Model — pick which provider's FM to run in the playground session.
+- Model Provider - the company that built a hosted FM, such as Anthropic, Meta, or Amazon.
+- Modality - the input/output type a model handles, like text, image, or multimodal.
+- Chat/Text Playground - a console workspace for interactively testing prompts against a model.
+  - Mode - choose between conversational chat or single-turn text completion.
+  - Select Model - pick which provider's FM to run in the playground session.
 
 ## Configuration Options
 
-- Temperature — controls output randomness, with lower values giving more deterministic responses.
-- Top P — restricts sampling to the smallest set of tokens whose cumulative probability meets the threshold.
-- Top K — limits sampling to the K most likely next tokens.
-- Response Length — caps the maximum number of tokens the model generates.
-- Stop Sequences — strings that immediately halt generation when produced.
-- Guardrails — configurable safety policies that filter harmful or unwanted model behavior.
-  - Content Filtering — blocks categories of harmful content like hate, violence, or sexual material.
-  - Sensitive Information Protection — detects and redacts PII and other sensitive data.
-  - Multilingual Support — applies guardrail policies across multiple languages.
-  - Prompt and Response Protection — screens both user inputs and model outputs against the policy.
+- Temperature - controls output randomness, with lower values giving more deterministic responses.
+- Top P - restricts sampling to the smallest set of tokens whose cumulative probability meets the threshold.
+- Top K - limits sampling to the K most likely next tokens.
+- Response Length - caps the maximum number of tokens the model generates.
+- Stop Sequences - strings that immediately halt generation when produced.
+- Guardrails - configurable safety policies that filter harmful or unwanted model behavior.
+  - Content Filtering - blocks categories of harmful content like hate, violence, or sexual material.
+  - Sensitive Information Protection - detects and redacts PII and other sensitive data.
+  - Multilingual Support - applies guardrail policies across multiple languages.
+  - Prompt and Response Protection - screens both user inputs and model outputs against the policy.
 
 ## Image/Video Playground
 
-- Generate Image — creates a new image from a text prompt.
-- Generate Variations — produces alternative versions of an existing image.
-- Remove Object — erases an unwanted element from an image and fills the gap.
-- Replace Background — swaps the scene behind the main subject.
-- Replace Object — substitutes one element in an image for another via prompt.
-- Generate Video — creates a short video clip from a prompt or source image.
+- Generate Image - creates a new image from a text prompt.
+- Generate Variations - produces alternative versions of an existing image.
+- Remove Object - erases an unwanted element from an image and fills the gap.
+- Replace Background - swaps the scene behind the main subject.
+- Replace Object - substitutes one element in an image for another via prompt.
+- Generate Video - creates a short video clip from a prompt or source image.
 
-- Negative Prompts — specify what the model should avoid including in the output.
-- Response Image — an input image supplied to guide or condition the generation.
-- Advanced Configuration — extra controls for fine-tuning generation behavior.
-  - Prompt Strength — how closely the output adheres to the prompt versus the source image.
-  - Seed — a fixed value that makes image generation reproducible.
+- Negative Prompts - specify what the model should avoid including in the output.
+- Response Image - an input image supplied to guide or condition the generation.
+- Advanced Configuration - extra controls for fine-tuning generation behavior.
+  - Prompt Strength - how closely the output adheres to the prompt versus the source image.
+  - Seed - a fixed value that makes image generation reproducible.
 
 ## Choosing an FM
 
-- Categories — the task types a model supports, such as text, chat, or embeddings.
-- Last Version — the most recent model release, usually offering the best quality.
-- Language — the languages a model is trained to understand and generate.
-- Max Tokens — the context window size limiting combined input and output length.
+- Categories - the task types a model supports, such as text, chat, or embeddings.
+- Last Version - the most recent model release, usually offering the best quality.
+- Language - the languages a model is trained to understand and generate.
+- Max Tokens - the context window size limiting combined input and output length.
 
 ## License Types
 
-- Apache 2.0 — permissive open-source license allowing commercial use with patent protection.
-- MIT license — minimal permissive license allowing nearly unrestricted reuse.
-- GNU General Public License (GPL) — copyleft license requiring derivative works to stay open source.
+- Apache 2.0 - permissive open-source license allowing commercial use with patent protection.
+- MIT license - minimal permissive license allowing nearly unrestricted reuse.
+- GNU General Public License (GPL) - copyleft license requiring derivative works to stay open source.
 
 ## License Advantages
 
-- Transparency — open licenses let you inspect how the model works.
-- Innovation — community access accelerates improvement and experimentation.
-- Customization — freedom to modify and adapt the model to your needs.
+- Transparency - open licenses let you inspect how the model works.
+- Innovation - community access accelerates improvement and experimentation.
+- Customization - freedom to modify and adapt the model to your needs.
 
 ## Measuring Success: Business Goals and Metrics
 
-- User Satisfaction — how happy users are with the AI-powered experience.
-  - Customer Satisfaction Score (CSAT) — a direct post-interaction rating of satisfaction.
-  - Net Promoter Score (NPS) — measures how likely users are to recommend the product.
-- Average Revenue per User (ARPU) — average income generated per active user.
-- Conversion Rate — the share of users who complete a desired action.
-  - Optimized Content — AI-tailored content that drives more conversions.
-  - Search — improved search relevance that helps users find and buy.
-  - Dynamic pricing — AI-adjusted prices that maximize conversions and revenue.
-  - Automated A/B testing — automatically testing variants to find what converts best.
-- Efficiency — output or cost savings gained from automation.
+- User Satisfaction - how happy users are with the AI-powered experience.
+  - Customer Satisfaction Score (CSAT) - a direct post-interaction rating of satisfaction.
+  - Net Promoter Score (NPS) - measures how likely users are to recommend the product.
+- Average Revenue per User (ARPU) - average income generated per active user.
+- Conversion Rate - the share of users who complete a desired action.
+  - Optimized Content - AI-tailored content that drives more conversions.
+  - Search - improved search relevance that helps users find and buy.
+  - Dynamic pricing - AI-adjusted prices that maximize conversions and revenue.
+  - Automated A/B testing - automatically testing variants to find what converts best.
+- Efficiency - output or cost savings gained from automation.
 
 ## Model Customization
 
-- Distillation — train a smaller student model to mimic a larger teacher model.
-  - Efficiency — lower inference cost and latency from the smaller model.
-  - Edge — small enough to run on resource-constrained or on-device deployments.
-- Fine-Tuning — adapt a pre-trained model's weights on task-specific labeled data.
+- Distillation - train a smaller student model to mimic a larger teacher model.
+  - Efficiency - lower inference cost and latency from the smaller model.
+  - Edge - small enough to run on resource-constrained or on-device deployments.
+- Fine-Tuning - adapt a pre-trained model's weights on task-specific labeled data.
 
 ## Bedrock Hyperparameters
 
-- Learning Rate — how large each weight-update step is during training.
-- Epoch — one full pass over the training dataset.
-- Batch Size — the number of examples processed before each weight update.
+- Learning Rate - how large each weight-update step is during training.
+- Epoch - one full pass over the training dataset.
+- Batch Size - the number of examples processed before each weight update.
 
 ## Continued Pretraining
 
@@ -150,49 +150,49 @@
 ## Multiagent Collaboration
 
 - Multiple specialized agents coordinate, with a supervisor delegating subtasks to complete a goal.
-- Pricing — how you pay for agent and model usage.
-  - On Demand — pay per request with no commitment.
-  - Provisioned Throughput — reserved capacity for predictable, high-volume workloads.
+- Pricing - how you pay for agent and model usage.
+  - On Demand - pay per request with no commitment.
+  - Provisioned Throughput - reserved capacity for predictable, high-volume workloads.
 
 ## Amazon Q
 
-- Amazon Q Business — generative AI assistant that answers questions over enterprise data.
-  - Unified Search — searches across connected enterprise sources from one interface.
-  - Amazon Q Apps — lets users build lightweight AI apps from natural-language descriptions.
-  - Application Tasks — performs actions in connected business applications.
-- Amazon Q Developer — AI coding assistant for writing, debugging, and modernizing software.
+- Amazon Q Business - generative AI assistant that answers questions over enterprise data.
+  - Unified Search - searches across connected enterprise sources from one interface.
+  - Amazon Q Apps - lets users build lightweight AI apps from natural-language descriptions.
+  - Application Tasks - performs actions in connected business applications.
+- Amazon Q Developer - AI coding assistant for writing, debugging, and modernizing software.
 
 ## The Anatomy of a Prompt
 
-- Instructions — the directive telling the model what task to perform.
-- Context — background information that helps the model respond accurately.
-- Input Data — the specific content the model should process.
-- Output Indicator — a cue specifying the desired format or start of the response.
+- Instructions - the directive telling the model what task to perform.
+- Context - background information that helps the model respond accurately.
+- Input Data - the specific content the model should process.
+- Output Indicator - a cue specifying the desired format or start of the response.
 
 ## Best Practices for Prompting
 
-- Be Clear — state the task precisely to avoid ambiguous results.
-- Avoid Leading Questions — phrase neutrally so you don't bias the answer.
-- Use Analogies or Comparisons — relate concepts to familiar ideas for better understanding.
-- Ask for Alternatives — request multiple options to explore different responses.
-- Use Prompt Templates — reusable structures with placeholders for repeatable prompting.
-  - Consistency — templates produce uniform outputs across requests.
-  - Efficiency — templates save time by reusing proven prompt structures.
-  - Clarity — templates enforce a clear, organized prompt format.
+- Be Clear - state the task precisely to avoid ambiguous results.
+- Avoid Leading Questions - phrase neutrally so you don't bias the answer.
+- Use Analogies or Comparisons - relate concepts to familiar ideas for better understanding.
+- Ask for Alternatives - request multiple options to explore different responses.
+- Use Prompt Templates - reusable structures with placeholders for repeatable prompting.
+  - Consistency - templates produce uniform outputs across requests.
+  - Efficiency - templates save time by reusing proven prompt structures.
+  - Clarity - templates enforce a clear, organized prompt format.
 
 ## Prompting Techniques
 
-- Zero-Shot Prompting — ask the model to perform a task with no examples.
-- Few-Shot Prompting — provide a few examples to demonstrate the desired pattern.
-- Chain-of-Thought Prompting (CoT) — prompt the model to reason step by step before answering.
+- Zero-Shot Prompting - ask the model to perform a task with no examples.
+- Few-Shot Prompting - provide a few examples to demonstrate the desired pattern.
+- Chain-of-Thought Prompting (CoT) - prompt the model to reason step by step before answering.
 
 ## Security Issues
 
-- Model Poisoning — corrupting training data to embed malicious behavior in the model.
-- Hijacking and Prompt Injection — crafted inputs that override the model's intended instructions.
-- Exposure — unintended disclosure of sensitive data through model outputs.
-- Prompt Leaking — tricking the model into revealing its hidden system prompt.
-- Jailbreaking — bypassing safety guardrails to elicit prohibited content.
+- Model Poisoning - corrupting training data to embed malicious behavior in the model.
+- Hijacking and Prompt Injection - crafted inputs that override the model's intended instructions.
+- Exposure - unintended disclosure of sensitive data through model outputs.
+- Prompt Leaking - tricking the model into revealing its hidden system prompt.
+- Jailbreaking - bypassing safety guardrails to elicit prohibited content.
 
 ## Task Statement 3.1: Describe design considerations for applications that use foundation models (FMs).
 
@@ -230,7 +230,7 @@
 
 - **Model complexity**
   - General-purpose LLMs vs. specialized models (embeddings, image, code)
-  - Open-weight (Llama) vs. proprietary (Claude) — licensing and hosting implications
+  - Open-weight (Llama) vs. proprietary (Claude) - licensing and hosting implications
   - Parameter count correlates with capability but not always with task-specific performance
 
 - **Customization**
@@ -255,9 +255,9 @@
 
 - **Temperature**
   - Controls randomness in token selection (typically 0.0 to 1.0)
-  - **Low (0–0.3)**: deterministic, focused, factual — good for Q&A, extraction, code
-  - **Medium (0.4–0.7)**: balanced creativity and coherence — general conversation
-  - **High (0.8–1.0)**: creative, diverse, unpredictable — brainstorming, creative writing
+  - **Low (0–0.3)**: deterministic, focused, factual - good for Q&A, extraction, code
+  - **Medium (0.4–0.7)**: balanced creativity and coherence - general conversation
+  - **High (0.8–1.0)**: creative, diverse, unpredictable - brainstorming, creative writing
   - Temperature 0 produces most reproducible outputs
 
 - **Top-p (nucleus sampling)**
@@ -427,12 +427,12 @@
   - **Orchestration**: manage loop (plan → act → observe → repeat)
 
 - **Business applications**
-  - **Customer service**: look up orders, process returns, escalate to human — Amazon Connect + Bedrock Agents
+  - **Customer service**: look up orders, process returns, escalate to human - Amazon Connect + Bedrock Agents
   - **IT operations**: diagnose incidents, run remediation scripts, create tickets
   - **Sales assistance**: research prospects, draft proposals, update CRM
   - **HR onboarding**: guide new hires through paperwork, answer policy questions, schedule training
   - **Financial analysis**: pull data from multiple sources, generate reports, flag anomalies
-  - **Software development**: write code, run tests, deploy, debug — Amazon Q Developer
+  - **Software development**: write code, run tests, deploy, debug - Amazon Q Developer
   - **Research**: gather information from web and internal docs, synthesize findings
 
 - **Amazon Bedrock Agents**
@@ -629,7 +629,7 @@
   - Adapt pre-trained model on smaller, task-specific labeled dataset
   - Adjusts model weights to specialize behavior for target use case
   - Much less compute than pre-training; hours to days on GPU instances
-  - Types: full fine-tuning (all weights) or parameter-efficient (LoRA, adapters — subset of weights)
+  - Types: full fine-tuning (all weights) or parameter-efficient (LoRA, adapters - subset of weights)
 
 - **Continuous pre-training**
   - Further pre-train on domain-specific unlabeled text (no labels needed)
@@ -813,7 +813,7 @@
 ### Identify approaches to evaluate the performance of applications built with FM
 
 - **RAG application evaluation**
-  - **Retrieval quality**: precision@k, recall@k — did retrieval find the right documents?
+  - **Retrieval quality**: precision@k, recall@k - did retrieval find the right documents?
   - **Answer faithfulness**: is the answer supported by retrieved context? (no hallucination beyond sources)
   - **Answer relevance**: does the answer address the user's question?
   - **End-to-end**: correct answer rate on domain-specific Q&A test set
