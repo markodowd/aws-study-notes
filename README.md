@@ -12,3 +12,6 @@
 
 [![AWS Certified Developer Logo](assets/dev.webp)](developer/README.md)
 
+## AI Business Strategist (AIB-C01)
+
+[![AWS Certified AI Business Strategist Logo](assets/ai-business.webp)](ai-business-strategist/README.md)
