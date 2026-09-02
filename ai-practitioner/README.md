@@ -1,6 +1,6 @@
 # AWS Certified AI Practitioner (AIF-CO1)
 
-![AWS Certified AI Logo](../assets/ai.webp)
+![AWS Certified AI Logo](../assets/ai-practitioner.webp)
 
 Collection of bullet points summarising various aspects of the AI certificate
 

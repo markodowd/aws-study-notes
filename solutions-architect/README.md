@@ -1,6 +1,6 @@
 # AWS Solutions Architect
 
-![AWS Certified Solutions Architect Logo](../assets/sa.webp)
+![AWS Certified Solutions Architect Logo](../assets/solutions-architect.webp)
 
 A collection of bullet points for each AWS Solutions Architect topic as taught by [AWS Certified Solutions Architect: Zero to Mastery](notes/https://zerotomastery.io/courses/aws-certified-solutions-architect-bootcamp/) and using ChatGPT summaries
 

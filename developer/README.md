@@ -1,6 +1,6 @@
 # AWS Certified Developer 
 
-![AWS Certified Developer Logo](../assets/dev.webp)
+![AWS Certified Developer Logo](../assets/developer.webp)
 
 Collection of bullet points summarising various aspects of the Developer certificate
 
