@@ -1,6 +1,6 @@
 # AWS Certified AI Business Strategist (AIB-C01)
 
-![AWS Certified AI Logo](../assets/ai-business.webp)
+![AWS Certified AI Logo](../assets/ai-business-strategist.webp)
 
 Collection of bullet points summarising the AI Business certificate
 
