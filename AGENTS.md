@@ -1,0 +1,4 @@
+- Abbreviations should be expanded to say the full form with the abbreviation. Ex. CEO = CEO (Chief Executive Officer)
+- Give a very brief very clear sentence after bold titles that don't have content
+- Review sentences to ensure they are brief but accurate
+- No fullstops at the end of sentences for cleanliness
