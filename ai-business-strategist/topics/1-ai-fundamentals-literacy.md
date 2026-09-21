@@ -190,7 +190,7 @@ When historical data is chosen poorly, the resulting model failures become visib
 
 **ISO/IEC 23053 (AI System Framework)**
 
-ISO/IEC 23053 is a framework for describing AI systems. It provides a shared vocabulary. It lets one organization describe an "AI system" or a "model" so other organizations and regulators interpret it consistently. Think of it as the dictionary the industry agreed on
+ISO/IEC 23053 is a framework for describing AI systems. It provides a shared vocabulary, letting one organization describe an "AI system" or a "model" so other organizations and regulators interpret it consistently. Think of it as the dictionary the industry agreed on
 
 When a vendor uses 23053 vocabulary, they signal that their system descriptions can be checked against an international reference, not just against vendor marketing language
 
@@ -274,7 +274,7 @@ An AI agent is built on top of an AI model, usually a large language model. The 
 
 Four capabilities define an AI agent. Two of them are what separate a single agent from the other AI solutions you have seen. The other two appear once more than one agent is involved
 
-- Autonomy. The agent decides its own next step inside the perceive-reason-act loop. It does not wait for a person to run each step. This is the capability that separates an agent from a generative AI tool, which produces output only when prompted. Autonomy is also why agents need governance. An agent without human checkpoints can take actions the company never anticipated or authorized. That is why human review points and audit trails matter for agents in a way they do not for a tool that only generates text. You will return to this when deciding where an agent fits later in the lesson
+- Autonomy. The agent decides its own next step inside the perceive-reason-act loop. It does not wait for a person to run each step. This is the capability that separates an agent from a generative AI tool, which produces output only when prompted. Autonomy is also why agents need governance: an agent without human checkpoints can take actions the company never anticipated or authorized, which is why human review points and audit trails matter for agents in a way they do not for a tool that only generates text
 
 - Tool use. The agent reaches into real systems. It looks things up, calls APIs, and takes actions, rather than only producing text. This is the capability that separates an agent from a predictive model, which outputs a score or a category but does not act
 
@@ -544,7 +544,7 @@ The model is retrained on a curated set of your company's content: past customer
 
 #### Caution
 
-One caution before you propose fine-tuning. Fine-tuning retrains the model on your proprietary company content. That carries data-governance and security implications the CISO (Chief Information Security Officer) will need to approve. Raise it as a data-handling decision, not just a quality upgrade. The security conversation needs to happen before the vendor commitment, not after
+Before proposing fine-tuning, flag one caution: it retrains the model on your proprietary company content, which carries data-governance and security implications the CISO (Chief Information Security Officer) will need to approve. Raise it as a data-handling decision, not just a quality upgrade. The security conversation needs to happen before the vendor commitment, not after
 
 The tradeoffs:
 

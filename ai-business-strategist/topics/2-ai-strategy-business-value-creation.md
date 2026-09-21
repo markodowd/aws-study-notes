@@ -166,18 +166,6 @@ No ambiguity in the correct answer. AI is designed for situations where the righ
 
 **Transition Planning**
 
-1: Parallel Running
-
-Both the old process and the new AI system operate at once and results are compared. The AI system takes over only after it performs consistently. Safest approach, highest cost
-
-2: Phased Rollout
-
-The AI system is deployed in stages, one plant or line or team at a time. Limits the blast radius, and requires clear criteria for advancing each phase
-
-3: Rollback Planning
-
-Trigger conditions are defined in advance for reverting to the prior process. Naming the accuracy threshold or error rate that forces a rollback is what makes moving forward defensible
-
 **Four factors determine how you plan the transition**
 
 - Business continuity: What happens if the AI system fails during the transition? For a vision QC (Quality Control) system on a production line, a failure means uninspected product reaching customers. For a demand forecasting system, a failure means reverting to manual planning. The higher the continuity risk, the more conservative the transition approach
@@ -379,7 +367,7 @@ Model retraining costs are triggered by events: product mix changes, seasonal sh
 
 4: Talent
 
-Talent costs are the most underestimated. The data science team that built the model needs to monitor it, retrain it, and respond to production incidents. At AnyCompany Packaging, Akua Mansa's two-person team is now supporting three production models. That capacity constraint shows up first as delayed retraining cycles and degraded model performance, only later as a budget line
+Talent costs are the most underestimated. The data science team that built the model needs to monitor it, retrain it, and respond to production incidents. A two-person team supporting three production models is a capacity constraint that shows up first as delayed retraining cycles and degraded model performance, only later as a budget line
 
 **Cost Control strategies**
 
