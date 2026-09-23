@@ -2,6 +2,42 @@
 
 ## Task 4.1: Assess AI business readiness and maturity
 
+**AWS Cloud Adoption Framework (AWS CAF)**
+
+A structured approach to cloud and AI adoption that organizes planning across six perspectives (Business, People, Governance, Platform, Security, Operations). Helps an organization identify readiness gaps across all dimensions
+
+**AWS Well-Architected Framework (Generative AI Lens)**
+
+Provides best practices for building generative AI workloads on AWS, including organizational readiness considerations for AI adoption
+
+**AWS Prescriptive Guidance**
+
+A library of strategies, guides, and patterns that help organizations plan and execute technology transformation, including AI and ML adoption pathways
+
+**AWS Training and Certification**
+
+Workforce readiness resources including role-based learning paths, digital training, and certifications that help organizations assess and close skills gaps
+
+**AWS Lake Formation**
+
+Unified data governance, fine-grained access control, data cataloging, centralized permissions.
+
+**Amazon DataZone**
+
+Data sharing across organizational boundaries, built-in governance, data discovery.
+
+**AWS Glue**
+
+Serverless data integration, discover/prepare/combine/transform data, automated pipelines.
+
+**AWS CAF (Platform perspective)**
+
+Iinfrastructure readiness assessment, technology foundation for AI workloads.
+
+**AWS Prescriptive Guidance (Organization Adoption Framework)**
+
+Building CoEs, establishing governance, scaling AI capabilities.
+
 ### Skill 4.1.1: Assess business readiness to adopt AI across critical dimensions (for example, leadership alignment, data quality, cultural preparedness, technical infrastructure, governance frameworks)
 
 **Six readiness dimensions**
@@ -289,14 +325,14 @@ The third is creating visible quick wins that keep the initiative on the executi
 
 **Building cross-functional teams**
 
-| Role | Why They Are Needed | What Happens Without Them |
-|---|---|---|
-| Business sponsor | Executive authority and accountability | No one can unblock budget or override resistance |
-| Technical lead | AI and ML (Machine Learning) expertise, architecture decisions | Solutions are technically infeasible or over-engineered |
-| Operations representative | Workflow knowledge, implementation reality | Solutions do not fit how people actually work |
-| Legal/compliance | Regulatory requirements, union agreements | Deployment blocked at the last minute by compliance |
-| Change management | Communication, training, adoption tracking | Workforce resists because no one told them what is changing |
-| Plant floor representation | End-user voice, practical constraints | Solutions ignore shift schedules, safety requirements, and daily reality |
+| Role                       | Why They Are Needed                                            | What Happens Without Them                                                |
+| -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Business sponsor           | Executive authority and accountability                         | No one can unblock budget or override resistance                         |
+| Technical lead             | AI and ML (Machine Learning) expertise, architecture decisions | Solutions are technically infeasible or over-engineered                  |
+| Operations representative  | Workflow knowledge, implementation reality                     | Solutions do not fit how people actually work                            |
+| Legal/compliance           | Regulatory requirements, union agreements                      | Deployment blocked at the last minute by compliance                      |
+| Change management          | Communication, training, adoption tracking                     | Workforce resists because no one told them what is changing              |
+| Plant floor representation | End-user voice, practical constraints                          | Solutions ignore shift schedules, safety requirements, and daily reality |
 
 - **Accountability standards**: "Everyone is accountable" means no one is accountable. Define outcome-based accountability:
 
@@ -382,12 +418,12 @@ One failed experiment six months ago. No one has proposed another since. The org
 
 The organization asks people to adopt AI. Then evaluates them on metrics AI disrupts. Managers are measured on output consistency, not innovation or experimentation. The workforce rationally avoids AI because adopting it creates risk to their performance reviews without corresponding reward. This is not resistance. It is rational self-preservation within a broken incentive structure
 
-| Barrier | Wrong Intervention | Right Intervention | Why |
-|---|---|---|---|
-| Risk aversion | Mandate compliance | Safe-to-fail experiments with bounded scope, pre-approved "failure budget," and learning framing | Mandates increase fear. Bounded experiments reduce perceived risk |
-| Resistance to change | More communication | Involvement in design. People do not resist what they help create | Communication without involvement feels like being told, not asked |
-| Fear of failure | Ignore the failed experiment | Redefine success metrics. Learning outcomes, not performance outcomes alone. Celebrate what was learned | Ignoring the failure reinforces the lesson "do not try." Reframing it as learning changes the calculus |
-| Incentive misalignment | Training programs | Realign reward structures: add AI adoption metrics AND provide a grace period on existing metrics during transition | Training without incentive alignment teaches people skills they are punished for using |
+| Barrier                | Wrong Intervention           | Right Intervention                                                                                                  | Why                                                                                                    |
+| ---------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Risk aversion          | Mandate compliance           | Safe-to-fail experiments with bounded scope, pre-approved "failure budget," and learning framing                    | Mandates increase fear. Bounded experiments reduce perceived risk                                      |
+| Resistance to change   | More communication           | Involvement in design. People do not resist what they help create                                                   | Communication without involvement feels like being told, not asked                                     |
+| Fear of failure        | Ignore the failed experiment | Redefine success metrics. Learning outcomes, not performance outcomes alone. Celebrate what was learned             | Ignoring the failure reinforces the lesson "do not try." Reframing it as learning changes the calculus |
+| Incentive misalignment | Training programs            | Realign reward structures: add AI adoption metrics AND provide a grace period on existing metrics during transition | Training without incentive alignment teaches people skills they are punished for using                 |
 
 ### Skill 4.3.5: Determine appropriate workforce development approaches to accelerate enterprisewide AI literacy (for example, proof of concept (PoC) programs, hackathons, training programs, responsible AI training)
 
@@ -420,12 +456,12 @@ Can make strategic decisions about AI investment, governance, and organizational
 
 **Matching Approaches to Workforce Segments**
 
-| Segment | Size | Target Level | Constraint | Recommended Approach |
-|---|---|---|---|---|
-| Floor workers | 4,500 (70%) | Awareness | Shift schedules. Cannot pull for multi-day training | Microlearning on-shift. Peer demos. 15-min modules during shift handoff |
-| Coordinators/supervisors | 675 (15%) | Literacy | Bridge role. Need to interpret AI outputs AND explain to floor workers | Structured training (2-day program) + responsible AI module |
-| Engineers | 450 (10%) | Proficiency | Technical depth required. Split: half eager, half threatened | PoC embedding + hackathon. Address the "threat" group separately |
-| Leadership | 225 (5%) | Expertise | Time-constrained. Need strategic literacy, not technical skill | Executive briefing series + responsible AI for decision-makers |
+| Segment                  | Size        | Target Level | Constraint                                                             | Recommended Approach                                                    |
+| ------------------------ | ----------- | ------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Floor workers            | 4,500 (70%) | Awareness    | Shift schedules. Cannot pull for multi-day training                    | Microlearning on-shift. Peer demos. 15-min modules during shift handoff |
+| Coordinators/supervisors | 675 (15%)   | Literacy     | Bridge role. Need to interpret AI outputs AND explain to floor workers | Structured training (2-day program) + responsible AI module             |
+| Engineers                | 450 (10%)   | Proficiency  | Technical depth required. Split: half eager, half threatened           | PoC embedding + hackathon. Address the "threat" group separately        |
+| Leadership               | 225 (5%)    | Expertise    | Time-constrained. Need strategic literacy, not technical skill         | Executive briefing series + responsible AI for decision-makers          |
 
 **Which Segment First?**
 
@@ -459,12 +495,12 @@ Build upward. Once floor workers see their roles are evolving rather than disapp
 
 Every development approach has a different cost, time-to-impact, and scale profile. The HR (Human Resources) Director needs to sequence them within a real budget
 
-| Approach | Cost | Time to Impact |
-|---|---|---|
-| Responsible AI awareness (all staff) | Lowest per-person, highest total (4,500 people) | Weeks. Shifts perception quickly, does not build deep skill |
-| Structured training (coordinators) | Moderate per-person, moderate total (675 people) | Months. Builds literacy, requires scheduling around shifts |
-| Hackathon (engineers) | Low total, time-bounded, no sustained learning | Days. Energy burst, identifies champions, no sustained capability |
-| PoC embedding (selected staff) | Highest per-person, lowest total (30 people) | Ongoing. Deep skill for few people, slow to scale |
+| Approach                             | Cost                                             | Time to Impact                                                    |
+| ------------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------- |
+| Responsible AI awareness (all staff) | Lowest per-person, highest total (4,500 people)  | Weeks. Shifts perception quickly, does not build deep skill       |
+| Structured training (coordinators)   | Moderate per-person, moderate total (675 people) | Months. Builds literacy, requires scheduling around shifts        |
+| Hackathon (engineers)                | Low total, time-bounded, no sustained learning   | Days. Energy burst, identifies champions, no sustained capability |
+| PoC embedding (selected staff)       | Highest per-person, lowest total (30 people)     | Ongoing. Deep skill for few people, slow to scale                 |
 
 ### Skill 4.3.6: Identify opportunities to transition human roles from manual operations to human oversight and collaboration with AI systems, and make strategic decisions that balance human strengths (for example, critical thinking, empathy, creativity) with AI capabilities
 
@@ -494,13 +530,13 @@ Judgment under ambiguity. Empathy and interpersonal trust. Novel situations with
 
 The following table lists the task attributes that determine whether a task suits AI or requires human judgment
 
-| Task | % of Time | AI-Suitable? | Transition |
-|---|---|---|---|
-| Visual defect detection (clear cases) | 45% | Yes (99.2% accuracy) | AI performs, human spot-checks |
-| Visual defect detection (borderline) | 15% | Partial | AI flags, human decides |
-| Root cause analysis | 20% | No (requires contextual judgment) | Human performs, AI provides data |
-| Documentation and reporting | 10% | Yes | AI generates, human reviews |
-| Training new inspectors | 10% | No (interpersonal, tacit knowledge) | Human performs |
+| Task                                  | % of Time | AI-Suitable?                        | Transition                       |
+| ------------------------------------- | --------- | ----------------------------------- | -------------------------------- |
+| Visual defect detection (clear cases) | 45%       | Yes (99.2% accuracy)                | AI performs, human spot-checks   |
+| Visual defect detection (borderline)  | 15%       | Partial                             | AI flags, human decides          |
+| Root cause analysis                   | 20%       | No (requires contextual judgment)   | Human performs, AI provides data |
+| Documentation and reporting           | 10%       | Yes                                 | AI generates, human reviews      |
+| Training new inspectors               | 10%       | No (interpersonal, tacit knowledge) | Human performs                   |
 
 **The Hybrid Model**
 
@@ -711,11 +747,11 @@ The curated pilot data does not match the live data the production system will s
 
 Each barrier pairs with a bridging intervention:
 
-| Barrier | Intervention |
-|---|---|
-| Governance not ready | Production-readiness checklist covering rollback authority, audit trails, compliance documentation, and decision rights, signed off before the workload moves |
+| Barrier                     | Intervention                                                                                                                                                                                                                                                                                                      |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Governance not ready        | Production-readiness checklist covering rollback authority, audit trails, compliance documentation, and decision rights, signed off before the workload moves                                                                                                                                                     |
 | Operations team not trained | Embedded rotation: operations team members are seconded into the AI/data team during the final pilot phase and early production. They learn by running the workload, not by sitting through training. The handover happens after they have already operated it, with a documented runbook to support steady state |
-| Data pipeline not hardened | Load-testing the pipeline against expected production volume, and a hardening sprint that closes the gaps the load test surfaces |
+| Data pipeline not hardened  | Load-testing the pipeline against expected production volume, and a hardening sprint that closes the gaps the load test surfaces                                                                                                                                                                                  |
 
 ### Skill 4.4.6: Evaluate multiple factors throughout AI scaling initiatives across an enterprise to ensure business continuity and performance
 

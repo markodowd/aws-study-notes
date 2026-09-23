@@ -2,6 +2,14 @@
 
 ## Task 3.1: Apply responsible AI principles to business decisions
 
+**AWS Well-Architected Framework (Responsible AI Lens)**
+
+Guidance that defines the dimensions of responsible AI and organizes them into focus areas aligned to the stages of the machine learning lifecycle. It is where the principles come from and how they are turned into questions a team can answer
+
+**AWS Shared Responsibility Model**
+
+The division of security duties between AWS and the customer. AWS is responsible for security of the cloud, the infrastructure that runs the services, and the customer is responsible for security in the cloud, which includes their data and how they configure what they use.
+
 ### Skill 3.1.1: Apply responsible AI principles and dimensions (for example, fairness, explainability, privacy, safety, transparency, robustness) to business scenarios
 
 **What is Responsible AI (RAI)?**
@@ -126,11 +134,15 @@ This is where responsible AI becomes an ongoing practice, not a one-time review
 
 **Appropriate safeguards**
 
-Confidence thresholds define a minimum level of model certainty required for an output to proceed without human review. When the model's confidence falls below the threshold, the output is automatically routed to a human reviewer
-Hallucination detection uses multi-source verification or consistency checks to identify when an AI system generates outputs that are fabricated, unsupported by source data, or internally contradictory
-Guardrails are automated filters that block harmful, biased, or policy-violating outputs before they are delivered to the end user. Guardrails act as a first line of defense that operates in real time
-Audit trails create a documented record of every AI-generated output, the data that informed it, and any human review or override that occurred. Audit trails enable accountability and support regulatory compliance
-Escalation criteria are predefined rules that determine when an output must be flagged for human review. For example: "Flag for review if confidence is below 80% or if the output involves protected categories"
+- Confidence thresholds define a minimum level of model certainty required for an output to proceed without human review. When the model's confidence falls below the threshold, the output is automatically routed to a human reviewer
+
+- Hallucination detection uses multi-source verification or consistency checks to identify when an AI system generates outputs that are fabricated, unsupported by source data, or internally contradictory
+
+- Guardrails are automated filters that block harmful, biased, or policy-violating outputs before they are delivered to the end user. Guardrails act as a first line of defense that operates in real time
+
+- Audit trails create a documented record of every AI-generated output, the data that informed it, and any human review or override that occurred. Audit trails enable accountability and support regulatory compliance
+
+- Escalation criteria are predefined rules that determine when an output must be flagged for human review. For example: "Flag for review if confidence is below 80% or if the output involves protected categories"
 
 ## Task 3.2: Establish AI governance structures and ensure regulatory compliance
 
@@ -152,12 +164,12 @@ AI Governance specifically refers to the frameworks that ensure AI systems are d
 
 **AI Governance Structures**
 
-| Pillar | Definition | Example |
-|---|---|---|
-| Policies and standards | Documented rules defining acceptable AI use, risk thresholds, and ethical boundaries | Acceptable use policies, model risk standards, data handling requirements |
-| Organizational structure | Defined roles, responsibilities, and decision-making authority for AI oversight | AI ethics boards, responsible AI teams, executive sponsors, model owners |
-| Processes | Repeatable workflows for AI lifecycle management | Risk assessments, model approval gates, incident response, audit procedures |
-| Technical Controls | Automated mechanisms that enforce governance requirements | Access controls, monitoring/alerting, bias detection tools, logging, model registries |
+| Pillar                   | Definition                                                                           | Example                                                                               |
+| ------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| Policies and standards   | Documented rules defining acceptable AI use, risk thresholds, and ethical boundaries | Acceptable use policies, model risk standards, data handling requirements             |
+| Organizational structure | Defined roles, responsibilities, and decision-making authority for AI oversight      | AI ethics boards, responsible AI teams, executive sponsors, model owners              |
+| Processes                | Repeatable workflows for AI lifecycle management                                     | Risk assessments, model approval gates, incident response, audit procedures           |
+| Technical Controls       | Automated mechanisms that enforce governance requirements                            | Access controls, monitoring/alerting, bias detection tools, logging, model registries |
 
 **Organizational Structure**
 
@@ -193,26 +205,26 @@ The landscape is fragmented, rapidly evolving, and varies significantly by juris
 
 **AI Regulations by Key Themes**
 
-| Theme | What It Covers | Example Regulations |
-|---|---|---|
-| Transparency & Explainability | Disclosure that AI is being used; ability to explain decisions to affected individuals | EU AI Act (Art. 13), NYC Local Law 144 |
-| Fairness & Non-Discrimination | Preventing bias and ensuring equitable outcomes across protected groups | EU AI Act, US EO 14110, EEOC guidance |
-| Privacy & Data Protection | Lawful data collection, purpose limitation, data minimization, individual rights | GDPR, CCPA/CPRA, Brazil LGPD |
-| Safety & Reliability | Ensuring AI systems function as intended without causing harm | EU AI Act (high-risk requirements), NIST AI RMF |
-| Accountability & Oversight | Human oversight, clear liability, organizational responsibility | EU AI Act (Art. 14), proposed US liability frameworks |
-| Risk Classification | Categorizing AI systems by potential harm to determine regulatory requirements | EU AI Act (unacceptable/high/limited/minimal risk tiers) |
-| Sector-Specific Rules | Targeted regulation for high-stakes domains | FDA (healthcare AI), SR 11-7 (financial model risk), FAA (autonomous systems) |
-| Intellectual Property | Copyright, training data rights, ownership of AI-generated content | US Copyright Office guidance, pending EU provisions |
-| National Security & Dual Use | Export controls, frontier model safety, compute thresholds | US EO 14110, US export controls on AI chips |
+| Theme                         | What It Covers                                                                         | Example Regulations                                                           |
+| ----------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Transparency & Explainability | Disclosure that AI is being used; ability to explain decisions to affected individuals | EU AI Act (Art. 13), NYC Local Law 144                                        |
+| Fairness & Non-Discrimination | Preventing bias and ensuring equitable outcomes across protected groups                | EU AI Act, US EO 14110, EEOC guidance                                         |
+| Privacy & Data Protection     | Lawful data collection, purpose limitation, data minimization, individual rights       | GDPR, CCPA/CPRA, Brazil LGPD                                                  |
+| Safety & Reliability          | Ensuring AI systems function as intended without causing harm                          | EU AI Act (high-risk requirements), NIST AI RMF                               |
+| Accountability & Oversight    | Human oversight, clear liability, organizational responsibility                        | EU AI Act (Art. 14), proposed US liability frameworks                         |
+| Risk Classification           | Categorizing AI systems by potential harm to determine regulatory requirements         | EU AI Act (unacceptable/high/limited/minimal risk tiers)                      |
+| Sector-Specific Rules         | Targeted regulation for high-stakes domains                                            | FDA (healthcare AI), SR 11-7 (financial model risk), FAA (autonomous systems) |
+| Intellectual Property         | Copyright, training data rights, ownership of AI-generated content                     | US Copyright Office guidance, pending EU provisions                           |
+| National Security & Dual Use  | Export controls, frontier model safety, compute thresholds                             | US EO 14110, US export controls on AI chips                                   |
 
 **AWS Support for Key Regulations**
 
-| Regulation | AWS Example |
-|---|---|
-| ISO/IEC 42001:2023 Certification | AWS is a leader in achieving accreditation for AI Management Systems, covering services like Amazon Bedrock, Q Business, and SageMaker |
-| NIST AI Risk Management Framework (AI RMF) | AWS provides guidance to map AI systems to NIST RMF, enabling organizations to manage AI risks |
-| EU AI Act Support | AWS provides capabilities that satisfy EU AI Act requirements regarding logging, transparency, and risk management for high-risk systems |
-| Data Sovereignty | Solutions are available to manage data residency to meet local privacy regulations |
+| Regulation                                 | AWS Example                                                                                                                              |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| ISO/IEC 42001:2023 Certification           | AWS is a leader in achieving accreditation for AI Management Systems, covering services like Amazon Bedrock, Q Business, and SageMaker   |
+| NIST AI Risk Management Framework (AI RMF) | AWS provides guidance to map AI systems to NIST RMF, enabling organizations to manage AI risks                                           |
+| EU AI Act Support                          | AWS provides capabilities that satisfy EU AI Act requirements regarding logging, transparency, and risk management for high-risk systems |
+| Data Sovereignty                           | Solutions are available to manage data residency to meet local privacy regulations                                                       |
 
 #### AWS Tools for AI Governance and Compliance
 
@@ -248,15 +260,15 @@ Example use case: A security team needs to detect and alert when an AI model end
 
 **Key Regulations and Triggers**
 
-| Regulatory Domain | Key Regulations | Triggered When AI... |
-|---|---|---|
-| Data privacy | GDPR, CCPA/CPRA, HIPAA | Processes personal or sensitive data |
-| AI-specific | EU AI Act, NIST AI RMF, state AI laws | Makes or supports consequential decisions |
-| Financial services | SR 11-7, ECOA, FCRA, Basel III | Used in credit, lending, trading, or fraud detection |
-| Employment | EEOC guidance, NYC Local Law 144, IOIA | Screens resumes, evaluates performance, makes hiring decisions |
-| Consumer protection | FTC Act Section 5, UDAP/UDAAP | Interacts with or makes decisions about consumers |
-| Sector-specific | FDA (health AI), NHTSA (autonomous vehicles), SEC | Operates in a regulated industry vertical |
-| Cross-border | Data localization laws, adequacy decisions | Transfers data or serves users across jurisdictions |
+| Regulatory Domain   | Key Regulations                                   | Triggered When AI...                                           |
+| ------------------- | ------------------------------------------------- | -------------------------------------------------------------- |
+| Data privacy        | GDPR, CCPA/CPRA, HIPAA                            | Processes personal or sensitive data                           |
+| AI-specific         | EU AI Act, NIST AI RMF, state AI laws             | Makes or supports consequential decisions                      |
+| Financial services  | SR 11-7, ECOA, FCRA, Basel III                    | Used in credit, lending, trading, or fraud detection           |
+| Employment          | EEOC guidance, NYC Local Law 144, IOIA            | Screens resumes, evaluates performance, makes hiring decisions |
+| Consumer protection | FTC Act Section 5, UDAP/UDAAP                     | Interacts with or makes decisions about consumers              |
+| Sector-specific     | FDA (health AI), NHTSA (autonomous vehicles), SEC | Operates in a regulated industry vertical                      |
+| Cross-border        | Data localization laws, adequacy decisions        | Transfers data or serves users across jurisdictions            |
 
 **Global Frameworks**
 
@@ -266,18 +278,18 @@ Example use case: A security team needs to detect and alert when an AI model end
 
 **Broader ISO/IEC AI Standards**
 
-| Standard | Focus |
-|---|---|
-| ISO/IEC 22989 | AI concepts and terminology — the foundational vocabulary standard |
-| ISO/IEC 23053 | Framework for AI systems using ML (architecture and lifecycle) |
-| ISO/IEC 23894 | AI risk management guidance |
-| ISO/IEC 42001 | AI management system (certifiable) |
-| ISO/IEC 42005 | AI system impact assessment |
-| ISO/IEC 25059 | Quality model for AI systems (extends SQuaRE) |
-| ISO/IEC TR 24027 | Bias in AI — assessment and mitigation |
-| ISO/IEC TR 24028 | Trustworthiness in AI — overview |
-| ISO/IEC TR 24029 | Robustness of neural networks |
-| ISO/IEC 38507 | Governance implications of AI for organizations |
+| Standard         | Focus                                                              |
+| ---------------- | ------------------------------------------------------------------ |
+| ISO/IEC 22989    | AI concepts and terminology — the foundational vocabulary standard |
+| ISO/IEC 23053    | Framework for AI systems using ML (architecture and lifecycle)     |
+| ISO/IEC 23894    | AI risk management guidance                                        |
+| ISO/IEC 42001    | AI management system (certifiable)                                 |
+| ISO/IEC 42005    | AI system impact assessment                                        |
+| ISO/IEC 25059    | Quality model for AI systems (extends SQuaRE)                      |
+| ISO/IEC TR 24027 | Bias in AI — assessment and mitigation                             |
+| ISO/IEC TR 24028 | Trustworthiness in AI — overview                                   |
+| ISO/IEC TR 24029 | Robustness of neural networks                                      |
+| ISO/IEC 38507    | Governance implications of AI for organizations                    |
 
 ### Skill 3.2.3: Identify appropriate access controls and data security measures for AI systems
 
@@ -362,13 +374,13 @@ Examples: minor policy deviations in non-production environments, cosmetic gaps 
 
 What is the AI business strategist actually deciding?
 
-| Strategist's Question | What the Risk Classification Matrix Provides |
-|---|---|
-| Should we build or deploy this? | Go/no-go signal based on risk tier calculated |
-| How much oversight does this need? | Governance intensity (light touch vs. full review board) |
-| Where do we invest monitoring? | Prioritized list of systems needing active surveillance |
-| What do we fix first? | Remediation sequencing when multiple issues compete for attention |
-| How do we explain our decisions? | Auditable, defensible rationale for regulators and leadership |
+| Strategist's Question              | What the Risk Classification Matrix Provides                      |
+| ---------------------------------- | ----------------------------------------------------------------- |
+| Should we build or deploy this?    | Go/no-go signal based on risk tier calculated                     |
+| How much oversight does this need? | Governance intensity (light touch vs. full review board)          |
+| Where do we invest monitoring?     | Prioritized list of systems needing active surveillance           |
+| What do we fix first?              | Remediation sequencing when multiple issues compete for attention |
+| How do we explain our decisions?   | Auditable, defensible rationale for regulators and leadership     |
 
 Risk classification or activities during the different stages in the AI lifecycle
 
@@ -527,16 +539,16 @@ Likelihood depends on how often the AI system encounters prompts or scenarios th
 Impact is determined by asking: if this harmful content reaches a user, what is the worst realistic outcome? Consider the severity spectrum, from minor reputational discomfort to regulatory fines, legal liability, or direct user harm. Factor in the audience (internal employees versus external customers), the scale of exposure (one user versus millions), and the speed at which damage could propagate before detection and intervention
 By mapping each content category against these two dimensions, the Strategist can prioritize mitigation investments where high-likelihood and high-impact risks intersect. They can also set acceptable risk thresholds for lower-severity categories and define escalation criteria that trigger policy revision when the risk landscape shifts
 
-| Category | Description |
-|---|---|
-| Hate speech and discrimination | Content that demeans, threatens, or incites violence against individuals or groups based on protected characteristics such as race, gender, religion, or disability |
-| Sexually explicit material | Inappropriate sexual content generated without user consent or in contexts where it violates platform policies or legal standards |
-| Violence and graphic content | Outputs that glorify, instruct, or depict violence, self-harm, or physical abuse |
-| Misinformation and disinformation | Factually incorrect or deliberately misleading content that can influence decisions, erode trust, or cause real-world harm |
-| Toxic or abusive language | Insults, harassment, bullying, or profanity directed at users or referenced individuals |
-| Dangerous or illegal activity | Instructions or encouragement related to weapons, drugs, fraud, terrorism, or other unlawful acts |
-| Personal and sensitive data exposure | Outputs that reveal personally identifiable information (PII), protected health information, or confidential data |
-| Self-harm and suicide content | Material that promotes, instructs, or normalizes self-injury or suicidal behavior |
+| Category                             | Description                                                                                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hate speech and discrimination       | Content that demeans, threatens, or incites violence against individuals or groups based on protected characteristics such as race, gender, religion, or disability |
+| Sexually explicit material           | Inappropriate sexual content generated without user consent or in contexts where it violates platform policies or legal standards                                   |
+| Violence and graphic content         | Outputs that glorify, instruct, or depict violence, self-harm, or physical abuse                                                                                    |
+| Misinformation and disinformation    | Factually incorrect or deliberately misleading content that can influence decisions, erode trust, or cause real-world harm                                          |
+| Toxic or abusive language            | Insults, harassment, bullying, or profanity directed at users or referenced individuals                                                                             |
+| Dangerous or illegal activity        | Instructions or encouragement related to weapons, drugs, fraud, terrorism, or other unlawful acts                                                                   |
+| Personal and sensitive data exposure | Outputs that reveal personally identifiable information (PII), protected health information, or confidential data                                                   |
+| Self-harm and suicide content        | Material that promotes, instructs, or normalizes self-injury or suicidal behavior                                                                                   |
 
 #### Mitigating strategies to prevent harmful content In AI systems
 
@@ -622,25 +634,25 @@ Continuously review AI-generated content for potential IP issues, especially in 
 
 **Mitigating Risks Related to AI System Reliability**
 
-| Risk Mitigation Approach | Description |
-|---|---|
-| Set reliability requirements | Proportionate to each system's risk tier before development begins |
-| Mandate monitoring infrastructure | Drift detection, performance dashboards, alerting thresholds, and automated circuit breakers |
-| Define fallback strategies | What happens when the model's confidence drops or performance degrades below acceptable thresholds |
-| Ensure SLAs exist for AI systems | Just as they do for traditional services, covering accuracy, latency, availability, and fairness metrics |
-| Build reliability into vendor evaluation | Third-party AI tools must meet the same reliability standards as internally built systems |
+| Risk Mitigation Approach                    | Description                                                                                                                         |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Set reliability requirements                | Proportionate to each system's risk tier before development begins                                                                  |
+| Mandate monitoring infrastructure           | Drift detection, performance dashboards, alerting thresholds, and automated circuit breakers                                        |
+| Define fallback strategies                  | What happens when the model's confidence drops or performance degrades below acceptable thresholds                                  |
+| Ensure SLAs exist for AI systems            | Just as they do for traditional services, covering accuracy, latency, availability, and fairness metrics                            |
+| Build reliability into vendor evaluation    | Third-party AI tools must meet the same reliability standards as internally built systems                                           |
 | Champion a culture of continuous validation | Reliability isn't proven at launch, it's maintained through ongoing testing, retraining schedules, and honest performance reporting |
 
 **Identifying Hallucination Risks**
 
-| Way to Identify | Description |
-|---|---|
-| Assess use case susceptibility | Determine which applications are most vulnerable; open-ended generation tasks, knowledge-intensive queries, and domains with sparse training data carry higher hallucination risk than constrained, well-scoped tasks |
-| Monitor factual accuracy metrics | Track rates of verifiably incorrect outputs through automated fact-checking, user feedback, and periodic human evaluation of model responses |
-| Analyze confidence signals | Where available, examine model confidence scores or token-level probabilities to identify outputs where the model is generating with low certainty |
-| Review user escalations and corrections | Use support tickets, thumbs-down signals, and user-reported errors as leading indicators of hallucination frequency and patterns |
-| Conduct domain-expert audits | Engage subject matter experts to periodically review AI outputs in specialized domains (legal, medical, financial) where hallucinations carry the highest consequence |
-| Test with adversarial and edge-case prompts | Probe the system with questions about obscure topics, recent events, or intentionally ambiguous queries to surface hallucination tendencies |
+| Way to Identify                             | Description                                                                                                                                                                                                           |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Assess use case susceptibility              | Determine which applications are most vulnerable; open-ended generation tasks, knowledge-intensive queries, and domains with sparse training data carry higher hallucination risk than constrained, well-scoped tasks |
+| Monitor factual accuracy metrics            | Track rates of verifiably incorrect outputs through automated fact-checking, user feedback, and periodic human evaluation of model responses                                                                          |
+| Analyze confidence signals                  | Where available, examine model confidence scores or token-level probabilities to identify outputs where the model is generating with low certainty                                                                    |
+| Review user escalations and corrections     | Use support tickets, thumbs-down signals, and user-reported errors as leading indicators of hallucination frequency and patterns                                                                                      |
+| Conduct domain-expert audits                | Engage subject matter experts to periodically review AI outputs in specialized domains (legal, medical, financial) where hallucinations carry the highest consequence                                                 |
+| Test with adversarial and edge-case prompts | Probe the system with questions about obscure topics, recent events, or intentionally ambiguous queries to surface hallucination tendencies                                                                           |
 
 **Implement Retrieval-Augmented Generation (RAG)**
 
@@ -682,14 +694,14 @@ Data quality degradation occurs when the data feeding an AI system becomes less 
 
 As an AI Strategist, it's critical to catch this early: silently deteriorating inputs erode model performance, decision accuracy, and user trust long before anyone notices. Early detection and mitigation preserves the business value of AI investments
 
-| Approach | Description |
-|---|---|
-| Monitor model performance trends | Watch for gradual declines in accuracy, relevance, or user satisfaction that aren't tied to any model or code change, which often signal upstream data issues |
-| Track data completeness | Look for increasing rates of missing fields, null values, or incomplete records in the data pipelines feeding your AI system |
-| Watch for distribution shifts | Identify when incoming data patterns no longer resemble the data the model was trained on, such as unexpected changes in volume, value ranges, or category proportions |
-| Review data source health | Monitor whether third-party data feeds, internal databases, or manual data entry processes are delivering data at expected quality levels and on expected schedules |
-| Listen to user feedback | Increased complaints about irrelevant, outdated, or incorrect AI outputs often trace back to degraded input data rather than model failures |
-| Check for stale data | Identify when data sources stop updating or refresh less frequently than expected, causing the AI system to operate on outdated information |
+| Approach                         | Description                                                                                                                                                            |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Monitor model performance trends | Watch for gradual declines in accuracy, relevance, or user satisfaction that aren't tied to any model or code change, which often signal upstream data issues          |
+| Track data completeness          | Look for increasing rates of missing fields, null values, or incomplete records in the data pipelines feeding your AI system                                           |
+| Watch for distribution shifts    | Identify when incoming data patterns no longer resemble the data the model was trained on, such as unexpected changes in volume, value ranges, or category proportions |
+| Review data source health        | Monitor whether third-party data feeds, internal databases, or manual data entry processes are delivering data at expected quality levels and on expected schedules    |
+| Listen to user feedback          | Increased complaints about irrelevant, outdated, or incorrect AI outputs often trace back to degraded input data rather than model failures                            |
+| Check for stale data             | Identify when data sources stop updating or refresh less frequently than expected, causing the AI system to operate on outdated information                            |
 
 **Mitigating Data Quality Degradation**
 

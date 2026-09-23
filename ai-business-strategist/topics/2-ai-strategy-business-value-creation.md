@@ -2,6 +2,10 @@
 
 ## Task 2.1: Develop AI strategies that align with business objectives
 
+**AWS Pricing Calculator**
+
+A tool for estimating the cost of a solution before committing to it, so build, buy, and partner options can be compared on cost as well as on capability and timeline
+
 ### Skill 2.1.1: Identify high-impact AI use cases across business functions (for example, customer operations, sales and marketing, research and development, software development) and map AI capabilities to specific business outcomes
 
 **AI Capability Types**
@@ -216,11 +220,11 @@ All AI value needs to be measurable, or it cannot be defended
 
 **Stakeholder KPI Framing**
 
-| Role | Primary KPI Concern | Question They're Asking | KPI Types That Answer It |
-|---|---|---|---|
-| CFO (Chief Financial Officer) | Financial return | "What is the financial return?" | Cost reduction, payback period, revenue impact. Translate intangibles into financial proxies (e.g., 8-point CSAT (Customer Satisfaction) improvement = 3% churn reduction = $X retained revenue) |
-| CHRO (Chief Human Resources Officer) | Workforce impact | "What is the workforce impact?" | Employee productivity, time recovered from manual tasks, satisfaction scores. Frame cost numbers as "hours recovered" not "headcount reduced" |
-| CIO (Chief Information Officer) | Strategic alignment / roadmap fit | "Does this align with the roadmap?" | Adoption rate, integration health, technical debt reduction. KPIs that show the initiative is running through official governed channels, since shadow AI tools spreading outside the governed stack are a separate risk |
+| Role                                 | Primary KPI Concern               | Question They're Asking             | KPI Types That Answer It                                                                                                                                                                                                 |
+| ------------------------------------ | --------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CFO (Chief Financial Officer)        | Financial return                  | "What is the financial return?"     | Cost reduction, payback period, revenue impact. Translate intangibles into financial proxies (e.g., 8-point CSAT (Customer Satisfaction) improvement = 3% churn reduction = $X retained revenue)                         |
+| CHRO (Chief Human Resources Officer) | Workforce impact                  | "What is the workforce impact?"     | Employee productivity, time recovered from manual tasks, satisfaction scores. Frame cost numbers as "hours recovered" not "headcount reduced"                                                                            |
+| CIO (Chief Information Officer)      | Strategic alignment / roadmap fit | "Does this align with the roadmap?" | Adoption rate, integration health, technical debt reduction. KPIs that show the initiative is running through official governed channels, since shadow AI tools spreading outside the governed stack are a separate risk |
 
 ### Skill 2.2.2: Establish baseline metrics before implementing AI solutions to accurately measure AI adoption effects
 

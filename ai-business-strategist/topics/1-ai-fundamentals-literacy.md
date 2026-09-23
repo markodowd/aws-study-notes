@@ -14,6 +14,14 @@ AWS's platform for building, training, and deploying custom ML (Machine Learning
 
 A standalone, agentic AI (Artificial Intelligence) workspace for business users and knowledge workers
 
+**AWS Marketplace**
+
+A place to evaluate and acquire third-party AI solutions, which supports both the build, buy, or partner decision and a governed path for bringing an approved tool into the organization
+
+**AWS Cloud Adoption Framework (AWS CAF)**
+
+Organizes cloud and AI adoption into perspectives covering business, people, governance, platform, security, and operations. The governance perspective is where policies for approved AI tool use belong
+
 **CEO (Chief Executive Officer)**
 
 The executive stakeholder focused on the strategic, board-level view of the AI initiative
@@ -204,11 +212,11 @@ When a vendor cites 42001 alignment, they are signaling that their internal AI g
 
 **The Two-Standard Comparison**
 
-| Dimension | ISO/IEC 23053 | ISO/IEC 42001 |
-|---|---|---|
-| Purpose | Shared vocabulary for describing AI systems | Governance of AI inside the organization |
-| Scope | How vendors talk about their systems | Who owns what; how risks are managed |
-| Aligned | Uses the agreed-on vocabulary | Internal practices map to the standard |
+| Dimension | ISO/IEC 23053                               | ISO/IEC 42001                            |
+| --------- | ------------------------------------------- | ---------------------------------------- |
+| Purpose   | Shared vocabulary for describing AI systems | Governance of AI inside the organization |
+| Scope     | How vendors talk about their systems        | Who owns what; how risks are managed     |
+| Aligned   | Uses the agreed-on vocabulary               | Internal practices map to the standard   |
 
 **Standardized Vocabulary Matters**
 
@@ -282,12 +290,12 @@ Four capabilities define an AI agent. Two of them are what separate a single age
 
 **The Four-Shape Comparison**
 
-| System Type | What It Does | Acts on Systems? | Right Fit When |
-|---|---|---|---|
-| Predictive model | Outputs a score or classification | No | The decision is "is this fraud" or "is this likely to churn" |
-| Generative AI | Produces new content on prompt | No | The task is to write, summarize, draft, or translate |
-| AI agent | Reasons, plans, and takes multi-step actions | Yes | Multi-step reasoning is required and real systems are involved |
-| Rule-based automation | Executes predefined rules | Yes (predictably) | Inputs and decisions are predictable |
+| System Type           | What It Does                                 | Acts on Systems?  | Right Fit When                                                 |
+| --------------------- | -------------------------------------------- | ----------------- | -------------------------------------------------------------- |
+| Predictive model      | Outputs a score or classification            | No                | The decision is "is this fraud" or "is this likely to churn"   |
+| Generative AI         | Produces new content on prompt               | No                | The task is to write, summarize, draft, or translate           |
+| AI agent              | Reasons, plans, and takes multi-step actions | Yes               | Multi-step reasoning is required and real systems are involved |
+| Rule-based automation | Executes predefined rules                    | Yes (predictably) | Inputs and decisions are predictable                           |
 
 **What is not an Agent**
 
