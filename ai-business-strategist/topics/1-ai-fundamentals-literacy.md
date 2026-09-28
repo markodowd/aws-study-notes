@@ -127,12 +127,15 @@ Data with some organizational structure but no fixed schema, such as JSON (JavaS
 
 Data with no predefined format, such as free text, images, audio, or video
 
-#### Data Type Match
+#### Data Type Match Examples
 
-Demand Forecast: Structured
-Service Chatbot: Semi-Structured
-Product Generator: Unstructured
-Recommendation Engine: Structured, Unstructured
+**Demand Forecast**: Structured
+
+**Service Chatbot**: Semi-Structured
+
+**Product Generator**: Unstructured
+
+**Recommendation Engine**: Structured, Unstructured
 
 ### Skill 1.1.4: Data Quality Matters for AI Outcomes
 
@@ -218,12 +221,11 @@ When a vendor cites 42001 alignment, they are signaling that their internal AI g
 | Scope     | How vendors talk about their systems        | Who owns what; how risks are managed     |
 | Aligned   | Uses the agreed-on vocabulary               | Internal practices map to the standard   |
 
-**Standardized Vocabulary Matters**
+**Standardised Vocabulary Matters**
 
 What "alignment" does and does not mean
-This is the part of the lesson that matters most for the briefing
 
-"Alignment" is not the same as "certification." This is the single distinction the lesson says matters most. Flip each card to see who is actually attesting to the claim
+"Alignment" is not the same as "Certification"
 
 **Alignment**
 
@@ -235,7 +237,7 @@ Independently verified: an outside body confirmed the practices meet the standar
 
 **Recognizing the limits**
 
-These are awareness-level frameworks for this module's purposes. The job here is to recognize these references in vendor materials and ask one more level of question because of it
+The goal is to recognize these references in vendor materials and ask one more level of question because of it
 
 ## Task 1.2: Identify and select appropriate AI solution types
 
@@ -244,7 +246,7 @@ These are awareness-level frameworks for this module's purposes. The job here is
 **Predictability**
 
 - Same inputs: Rule
-- different inputs: AI
+- Different inputs: AI
 
 **Data Complexity**
 
@@ -264,12 +266,15 @@ These are awareness-level frameworks for this module's purposes. The job here is
 #### What to ask the vendor
 
 What part of this is actually AI versus rules?
-The honest answer often reveals a system that is 80% rules with a small AI component for one specific decision. That can still be the right system. It is not the system the marketing language describes
+
+The honest answer often reveals a system that is 80% rules with a small AI component for one specific decision. That can still be the right system but it is not the system the marketing language describes
 
 What data does the AI part learn from?
+
 If the answer is "we use proprietary algorithms" or "our AI is trained on industry data," the vendor is dodging. Sound vendors can describe what their system learns from in concrete terms
 
 How does this perform compared to a well-designed rules-based system on the same task?
+
 Vendors rarely volunteer this comparison because the comparison is often unflattering. If the rules-based system performs equally well and costs less, the case for AI weakens
 
 ### Skill 1.2.2: Distinguish AI agents from other AI solutions and identify the core capabilities of AI agents (for example, autonomy, tool use, agent-to-agent communication, and orchestration strategies)
