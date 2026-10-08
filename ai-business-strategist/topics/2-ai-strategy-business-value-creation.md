@@ -105,15 +105,23 @@ Some industries and use cases have compliance requirements that constrain the pa
 **Portfolio Prioritization Criteria**
 
 - Business Value - Quantified ROI Projection
-  Business value: What is the measurable impact if this initiative succeeds? Revenue growth, cost reduction, customer retention, operational efficiency. Quantify it. "Strategic" is not a number
+
+Business value: What is the measurable impact if this initiative succeeds? Revenue growth, cost reduction, customer retention, operational efficiency. Quantify it. "Strategic" is not a number
+
 - Feasability - Data + Team + Timeline Confirmed
-  Feasibility: Can this initiative actually be executed given current data, team capability, and timeline? An initiative with high value and low feasibility is a wish, not a plan
+
+Feasibility: Can this initiative actually be executed given current data, team capability, and timeline? An initiative with high value and low feasibility is a wish, not a plan
+
 - Sustainability - Cost Curve Improves, Data Flywheel Exists
-  Sustainability: Will this initiative continue to deliver value after the initial deployment? Three dimensions:
-  Economic sustainability, Does the cost curve improve at scale, or does it get worse? An initiative that costs $500K to run at pilot scale and $2M to run at enterprise scale may not be worth scaling
-  Data flywheel, Does the model improve as it processes more data? Initiatives with self-reinforcing data loops compound in value over time. Initiatives without them plateau
-  Organizational sustainability, Does this initiative survive its creators? If the only person who understands how it works leaves, does it collapse? Initiatives that require heroic maintenance are fragile
+  - Sustainability: Will this initiative continue to deliver value after the initial deployment? Three dimensions:
+    - Economic sustainability, Does the cost curve improve at scale, or does it get worse? An initiative that costs $500K to run at pilot scale and $2M to run at enterprise scale may not be worth scaling
+
+    - Data flywheel, Does the model improve as it processes more data? Initiatives with self-reinforcing data loops compound in value over time. Initiatives without them plateau
+
+    - Organizational sustainability, Does this initiative survive its creators? If the only person who understands how it works leaves, does it collapse? Initiatives that require heroic maintenance are fragile
+
 - Strategic Alignment - Aligned To Strategic Roadmap
+
   Strategic alignment: Does this initiative support where the business is going over the next three years? An initiative can solve a real problem and still contradict the strategic roadmap. That gets it defunded at the next budget cycle, regardless of results
 
 #### Three Buckets for Every Initiative
@@ -166,16 +174,19 @@ No ambiguity in the correct answer. AI is designed for situations where the righ
 - Prediction or classification needed (what will happen, what category does this belong to)
 - The cost of a wrong answer is low enough to tolerate model error rates
 
-### Skill 2.1.5: Evaluate key considerations when preparing to transition business processes to AIbased solutions or between AI platforms (for example, business continuity, cost implications, data readiness, performance impact)
+### Skill 2.1.5: Evaluate key considerations when preparing to transition business processes to AI based solutions or between AI platforms (for example, business continuity, cost implications, data readiness, performance impact)
 
 **Transition Planning**
 
 **Four factors determine how you plan the transition**
 
-- Business continuity: What happens if the AI system fails during the transition? For a vision QC (Quality Control) system on a production line, a failure means uninspected product reaching customers. For a demand forecasting system, a failure means reverting to manual planning. The higher the continuity risk, the more conservative the transition approach
-- Cost implications: Running two systems in parallel (the old process and the new AI system) costs money. Parallel running is the safest approach, but it's also the most expensive. The transition plan needs to account for the overlap period
-- Data readiness: Is the data the AI system needs available and clean at the point of transition? A system that performs well in testing on historical data may behave differently on live production data. Plan for a calibration period
-- Performance impact: How will the transition affect the people doing the work? A scheduling system that changes how plant managers plan their week requires change management, not just a software deployment. Adoption is a transition risk, not just a technical one
+- **Business continuity**: What happens if the AI system fails during the transition? For a vision QC (Quality Control) system on a production line, a failure means uninspected product reaching customers. For a demand forecasting system, a failure means reverting to manual planning. The higher the continuity risk, the more conservative the transition approach
+
+- **Cost implications**: Running two systems in parallel (the old process and the new AI system) costs money. Parallel running is the safest approach, but it's also the most expensive. The transition plan needs to account for the overlap period
+
+- **Data readiness**: Is the data the AI system needs available and clean at the point of transition? A system that performs well in testing on historical data may behave differently on live production data. Plan for a calibration period
+
+- **Performance impact**: How will the transition affect the people doing the work? A scheduling system that changes how plant managers plan their week requires change management, not just a software deployment. Adoption is a transition risk, not just a technical one
 
 **Three Transition Approaches**
 
@@ -231,8 +242,11 @@ All AI value needs to be measurable, or it cannot be defended
 A KPI without a baseline is an opinion. A KPI with a baseline is evidence
 
 **Process Performance**: How long does the current process take? What is the error rate? What is the throughput? These are the numbers the AI initiative is supposed to improve
+
 **Customer Metrics**: What is the current CSAT score? NPS (Net Promoter Score)? Complaint volume? If the AI initiative is supposed to improve customer experience, you need to know where you started
+
 **Operational Metrics**: What is the current scrap rate, downtime frequency, OEE (Overall Equipment Effectiveness), or defect rate? These are the operational KPIs most AI initiatives in manufacturing are designed to move
+
 **Financial Metrics**: What is the current cost per unit, revenue per customer, or margin? These are the numbers the CFO will use to calculate ROI
 
 **Three Common Baseline Mistakes**
@@ -315,20 +329,14 @@ Total investment cost includes first-year operating costs, not just the upfront 
 **What the CFO will also ask**
 
 - Opportunity cost: What else could we have done with this capital? If the $680K partner investment could have returned 12% in another initiative, the AI initiative needs to beat that hurdle rate
+
 - Risk adjustment: What's the probability that the projected benefits actually materialize? An 8-month payback on a 90% confidence projection is different from an 8-month payback on a 60% confidence projection
+
 - Sensitivity: What happens to the payback period if the scrap rate improvement is 0.8% instead of 1.1%? If compute costs run 20% over estimate? The CFO wants to know the range, not just the point estimate
 
-The discipline
-Build the ROI model in a spreadsheet before the meeting, not during it. Know your sensitivity ranges. Know which assumptions are most likely to be challenged. The CFO will test the model — your job is to have already stress-tested it yourself
+Build the ROI model in a spreadsheet before the meeting, not during it. Know your sensitivity ranges. Know which assumptions are most likely to be challenged. The CFO will test the model. Your job is to have already stress-tested it yourself
 
 ### Skill 2.2.4: Identify leading indicators that predict AI project success
-
-- Adoption
-- Data Pipeline
-- Sponsor
-- Accuracy Trajectory
-
-#### Leading vs. Lagging Indicators
 
 **Leading Indicators**
 
@@ -346,12 +354,16 @@ Build the ROI model in a spreadsheet before the meeting, not during it. Know you
 
 **Four Leading Indicators**
 
-- Adoption rate
-- Data pipeline health
-- Sponsor engagement
-- Accuracy trajectory
+- Adoption
+- Data Pipeline
+- Sponsor
+- Accuracy Trajectory
 
-One yellow signal is a monitor. Two yellow signals are an investigation. Two red signals are an escalation
+One yellow signal is a monitor
+
+Two yellow signals are an investigation
+
+Two red signals are an escalation
 
 ### Skill 2.2.5: Implement basic cost factor controls for AI implementations, including cost planning and optimization strategies
 
@@ -359,7 +371,13 @@ One yellow signal is a monitor. Two yellow signals are an investigation. Two red
 
 1: Compute
 
-Compute costs are the most common source of budget overruns. Inference costs scale with production volume. Experiment costs scale with the number of model iterations the data science team runs. Running experiments on full production data instead of sampled data can generate 3–5x the expected compute bill within the first six months
+- Compute costs are the most common source of budget overruns
+
+- Inference costs scale with production volume
+
+- Experiment costs scale with the number of model iterations the data science team runs
+
+- Running experiments on full production data instead of sampled data can generate 3–5x the expected compute bill within the first six months
 
 2: Data Storage
 
@@ -512,31 +530,31 @@ Neither valued by customers nor defensible against competitors. Redirect the inv
 
 **Stage 1: Experimental**
 
-- What AI looks like: Small number of players running pilots. Results mixed and hard to compare. No standard use cases
-- Underinvestment risk: Minimal, being behind leaders is normal and defensible
-- Overinvestment risk: High, committing capital before market proof creates stranded investment
-- Appropriate posture: Watch and run targeted experiments
+- **What AI looks like**: Small number of players running pilots. Results mixed and hard to compare. No standard use cases
+- **Underinvestment risk**: Minimal, being behind leaders is normal and defensible
+- **Overinvestment risk**: High, committing capital before market proof creates stranded investment
+- **Appropriate posture**: Watch and run targeted experiments
 
 **Stage 2: Early Adoption**
 
-- What AI looks like: Standard use cases emerging and proving out. 15–30% of competitors have production deployments with measurable results. Leading companies building data assets that will compound
-- Underinvestment risk: Rising, waiting too long means entering a compounding disadvantage
-- Overinvestment risk: Remains present, not every announced capability is real, and market pricing of AI value has not fully formed
-- Appropriate posture: Selective expansion on proven use cases
+- **What AI looks like**: Standard use cases emerging and proving out. 15–30% of competitors have production deployments with measurable results. Leading companies building data assets that will compound
+- **Underinvestment risk**: Rising, waiting too long means entering a compounding disadvantage
+- **Overinvestment risk**: Remains present, not every announced capability is real, and market pricing of AI value has not fully formed
+- **Appropriate posture**: Selective expansion on proven use cases
 
 **Stage 3: Growth**
 
-- What AI looks like: Majority adoption underway. AI standard in leading companies. Competitors without production deployments are visibly behind
-- Underinvestment risk: High, differentiation is becoming harder as the baseline rises
-- Overinvestment risk: Shifts to specific capabilities rather than AI in general
-- Appropriate posture: Close gaps on standard use cases; differentiate on proprietary data
+- **What AI looks like**: Majority adoption underway. AI standard in leading companies. Competitors without production deployments are visibly behind
+- **Underinvestment risk**: High, differentiation is becoming harder as the baseline rises
+- **Overinvestment risk**: Shifts to specific capabilities rather than AI in general
+- **Appropriate posture**: Close gaps on standard use cases; differentiate on proprietary data
 
 **Stage 4: Mature**
 
-- What AI looks like: AI is infrastructure. Built into products, processes, and customer expectations. Not having AI is a disqualifier
-- Underinvestment risk: Existential, absence of AI is visible failure
-- Overinvestment risk: Shifts to "where specifically?" not "how much?"
-- Appropriate posture: Optimize; AI is cost of doing business
+- **What AI looks like**: AI is infrastructure. Built into products, processes, and customer expectations. Not having AI is a disqualifier
+- **Underinvestment risk**: Existential, absence of AI is visible failure
+- **Overinvestment risk**: Shifts to "where specifically?" not "how much?"
+- **Appropriate posture**: Optimize; AI is cost of doing business
 
 **Investment posture by position**
 
