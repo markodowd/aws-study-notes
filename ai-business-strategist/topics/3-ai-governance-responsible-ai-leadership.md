@@ -14,7 +14,7 @@ The division of security duties between AWS and the customer. AWS is responsible
 
 **What is Responsible AI (RAI)?**
 
-Responsible AI (RAI) is more than a set of guidelines—it is an organizational structure, a defined set of principles (called dimensions), and a practice that you embed across the entire AI lifecycle. RAI provides a framework for designing, developing, deploying, and operating AI systems ethically, transparently, and accountably. It establishes shared standards so every team—from data scientists to business leaders—makes consistent, informed decisions about how AI systems behave and affect the people who use them
+Responsible AI (RAI) is more than a set of guidelines. It is an organizational structure, a defined set of principles (called dimensions), and a practice that you embed across the entire AI lifecycle. RAI provides a framework for designing, developing, deploying, and operating AI systems ethically, transparently, and accountably. It establishes shared standards so every team from data scientists to business leaders makes consistent, informed decisions about how AI systems behave and affect the people who use them
 
 **Benefits of Responsible AI (RAI)**
 
@@ -31,9 +31,9 @@ Responsible AI (RAI) is more than a set of guidelines—it is an organizational 
 
 **Foundational concepts for Responsible AI (RAI)**
 
-Fairness is the principle that AI systems produce equitable outcomes across different groups of people. A fair AI system does not discriminate based on attributes such as race, gender, age, or socioeconomic status—whether that discrimination is intentional or an unintended consequence of the data or model design
+Fairness is the principle that AI systems produce equitable outcomes across different groups of people. A fair AI system does not discriminate based on attributes such as race, gender, age, or socioeconomic status. Whether that discrimination is intentional or an unintended consequence of the data or model design
 
-Explainability is the ability to understand and communicate how an AI system arrives at a specific output. An explainable AI system allows stakeholders—including developers, business leaders, regulators, and end users—to inspect the reasoning behind a decision, not just the decision itself
+Explainability is the ability to understand and communicate how an AI system arrives at a specific output. An explainable AI system allows stakeholders including developers, business leaders, regulators, and end users to inspect the reasoning behind a decision, not just the decision itself
 
 Controllability is the ability for humans to monitor, intervene in, and override AI system behavior. A controllable AI system includes mechanisms that allow operators to adjust, correct, or shut down the system when it produces unintended or harmful outcomes
 
@@ -53,11 +53,11 @@ Privacy and security require that AI systems protect the data they collect, stor
 
 **Safety**
 
-Safety ensures that AI systems do not cause harm to people, property, or the environment. You evaluate AI systems for potential risks—both intended and unintended—before deployment and continuously monitor them in production. Safe AI systems behave predictably within their defined operating conditions and fail gracefully when they encounter scenarios outside those conditions
+Safety ensures that AI systems do not cause harm to people, property, or the environment. You evaluate AI systems for potential risks both intended and unintended before deployment and continuously monitor them in production. Safe AI systems behave predictably within their defined operating conditions and fail gracefully when they encounter scenarios outside those conditions
 
 **Fairness**
 
-Fairness requires that AI systems produce equitable outcomes and do not reinforce or amplify existing biases. You evaluate your training data, model design, and system outputs for disparate impact across demographic groups. Fairness is not a one-time check—it requires ongoing monitoring because data distributions and societal contexts change over time. A fair AI system treats all users equitably and does not systematically disadvantage any group
+Fairness requires that AI systems produce equitable outcomes and do not reinforce or amplify existing biases. You evaluate your training data, model design, and system outputs for disparate impact across demographic groups. Fairness is not a one-time check it requires ongoing monitoring because data distributions and societal contexts change over time. A fair AI system treats all users equitably and does not systematically disadvantage any group
 
 **Veracity and Robustness**
 
@@ -69,7 +69,7 @@ Explainability requires that you can describe how and why an AI system produces 
 
 **Transparency**
 
-Transparency requires openly communicating to users and stakeholders that they are interacting with an AI system, what data it uses, what its capabilities and limitations are, and how it makes decisions. Transparency is the outward-facing complement to explainability—while explainability focuses on understanding the system internally, transparency focuses on disclosing that understanding to the people affected by it. Transparent AI systems do not obscure their nature or their limitations
+Transparency requires openly communicating to users and stakeholders that they are interacting with an AI system, what data it uses, what its capabilities and limitations are, and how it makes decisions. Transparency is the outward-facing complement to explainability while explainability focuses on understanding the system internally, transparency focuses on disclosing that understanding to the people affected by it. Transparent AI systems do not obscure their nature or their limitations
 
 ### Skill 3.1.2: Navigate tradeoffs when business objectives conflict with responsible AI principles
 
@@ -85,7 +85,7 @@ A decision that accelerates growth today can create compounding risk tomorrow. W
 
 3. Seek creative solutions that advance both goals
 
-Before you accept a tradeoff as binary, look for alternatives that reduce harm while still delivering business value. Consider phased rollouts with built-in safeguards and monitoring that allow you to validate responsible AI compliance before full deployment. Explore alternative modeling approaches that achieve similar performance with lower risk. Adjust your success metrics to include ethical outcomes—such as fairness scores, explanation quality, or customer trust indicators—alongside traditional business KPIs. Often, the best solution is not choosing one goal over the other but reframing the problem so both goals move forward
+Before you accept a tradeoff as binary, look for alternatives that reduce harm while still delivering business value. Consider phased rollouts with built-in safeguards and monitoring that allow you to validate responsible AI compliance before full deployment. Explore alternative modeling approaches that achieve similar performance with lower risk. Adjust your success metrics to include ethical outcomes such as fairness scores, explanation quality, or customer trust indicators alongside traditional business KPIs. Often, the best solution is not choosing one goal over the other but reframing the problem so both goals move forward
 
 ### Skill 3.1.3: Identify when responsible AI practices should be integrated into AI project planning to ensure governance by design
 
@@ -96,7 +96,7 @@ Before you accept a tradeoff as binary, look for alternatives that reduce harm w
 This is where responsible AI starts. Before you write a single line of code, you set the foundation for how the system will behave
 
 - Discuss the proposed use case with different stakeholders and diverse groups to surface assumptions, blind spots, and potential harms early
-- Evaluate whether AI is the right solution. Not every problem requires an AI system—determine whether AI adds genuine value over simpler, more transparent alternatives
+- Evaluate whether AI is the right solution. Not every problem requires an AI system determine whether AI adds genuine value over simpler, more transparent alternatives
 - Conduct a thorough risk assessment of the proposed use case. Identify who the system will affect, what could go wrong, and which responsible AI dimensions are most relevant to the project
 
 **Build: Training, Testing, and Evaluating the AI System**
@@ -106,7 +106,7 @@ This is where responsible AI principles are tested against real data and model b
 - Choose a model aligned with RAI requirements
 - Ensure your training data is safe, relevant, and representative of the population the system will serve. Biased or incomplete data produces biased outcomes
 - Consider legal requirements including data licensing, privacy regulations, and consent obligations before you use any dataset for training or evaluation
-- Use metrics to evaluate outcomes across responsible AI dimensions—not just accuracy. Measure for fairness, robustness, and reliability across different user groups
+- Use metrics to evaluate outcomes across responsible AI dimensions not just accuracy. Measure for fairness, robustness, and reliability across different user groups
 - Consider model value alignments and implement safeguards to mitigate identified risks. This includes content filters, output boundaries, and human review checkpoints where appropriate
 
 **Operate: Deploying and Monitoring in Production**
@@ -749,11 +749,11 @@ Define what the AI system should do when data quality drops below acceptable lev
 
 Model drift is the degradation of a deployed model's predictive performance over time because the real world has changed since the model was trained. It's not a bug it's an inevitability. Every model is a snapshot of patterns that existed in historical data, and the world doesn't hold still
 
-- **Concept Drift**: The relationship between inputs and the correct output changes. What "good" looks like has shifted. 
+- **Concept Drift**: The relationship between inputs and the correct output changes. What "good" looks like has shifted.
 
 Example: customer churn drivers change after a competitor launches a new product, but your features stay the same
 
-- **Data Drift**: The distribution of input data changes, even if the underlying relationship hasn't. 
+- **Data Drift**: The distribution of input data changes, even if the underlying relationship hasn't.
 
 Example: your model was trained on pre-pandemic purchasing behavior, and now the customer mix looks fundamentally different
 
