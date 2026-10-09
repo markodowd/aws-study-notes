@@ -173,15 +173,15 @@ AI Governance specifically refers to the frameworks that ensure AI systems are d
 
 **Organizational Structure**
 
-Effective AI governance requires structures that reflect the cross-functional nature of AI risk — no single team has the full picture. An AI strategist must design governance that brings together diverse expertise and assigns clear ownership, so that no AI system operates in an organizational gap where no one is answerable for its outcomes
+Effective AI governance requires structures that reflect the cross-functional nature of AI risk. No single team has the full picture. An AI strategist must design governance that brings together diverse expertise and assigns clear ownership, so that no AI system operates in an organizational gap where no one is answerable for its outcomes
 
 **Cross-Functional Representation**
 
-- Engineering and data science — to assess technical feasibility, model limitations, and failure modes
-- Legal and compliance — to interpret regulatory obligations and liability exposure
-- Ethics and responsible AI — to evaluate societal impact and fairness concerns
-- Product and business leadership — to align AI use with business objectives and customer expectations
-- Security and privacy — to address data protection, access control, and threat vectors
+- **Engineering and data science**: to assess technical feasibility, model limitations, and failure modes
+- **Legal and compliance**: to interpret regulatory obligations and liability exposure
+- **Ethics and responsible AI**: to evaluate societal impact and fairness concerns
+- **Product and business leadership**: to align AI use with business objectives and customer expectations
+- **Security and privacy**: to address data protection, access control, and threat vectors
 
 **Clear Accountability**
 
@@ -196,11 +196,12 @@ Without cross-functional representation, governance becomes siloed and blind to 
 
 **AI Governance Landscape**
 
-Hard law — Binding regulations with enforcement mechanisms (e.g., EU AI Act, CCPA)
-Soft law — Voluntary frameworks and guidelines (e.g., OECD AI Principles, NIST AI RMF)
-Industry standards — Technical and process standards (e.g., ISO/IEC 42001)
-Internal governance — Organization-specific policies and ethics commitments
-Multi-stakeholder initiatives — Cross-sector collaborations shaping norms (e.g., Partnership on AI, Frontier Model Forum, Linux Agentic AI Foundation)
+- **Hard Law**: Binding regulations with enforcement mechanisms (e.g., EU AI Act, CCPA)
+- **Soft Law**: Voluntary frameworks and guidelines (e.g., OECD AI Principles, NIST AI RMF)
+- **Industry Standards**: Technical and process standards (e.g., ISO/IEC 42001)
+- **Internal Governance**: Organization-specific policies and ethics commitments
+- **Multi-Stakeholder Initiatives**: Cross-sector collaborations shaping norms (e.g., Partnership on AI, Frontier Model Forum, Linux Agentic AI Foundation)
+
 The landscape is fragmented, rapidly evolving, and varies significantly by jurisdiction and sector
 
 **AI Regulations by Key Themes**
@@ -328,51 +329,56 @@ The AI strategist uses a risk matrix not as a one-time checkbox, but as a recurr
 The risk classification matrix works by evaluating risks along two primary axes: likelihood and impact. You score a risk by rating its likelihood (1–5) and impact (1–5) independently, then multiplying them to produce a composite score (1–25)
 
 Likelihood (how probable the risk event is)
-Rare (1) — May occur only in exceptional circumstances
 
-Unlikely (2) — Could occur but not expected
-
-Possible (3) — Might occur at some point
-
-Likely (4) — Will probably occur in most circumstances
-
-Almost Certain (5) — Expected to occur regularly
+- **Rare (1)**: May occur only in exceptional circumstances
+- **Unlikely (2)**: Could occur but not expected
+- **Possible (3)**: Might occur at some point
+- **Likely (4)**: Will probably occur in most circumstances
+- **Almost Certain (5)**: Expected to occur regularly
 
 Impact (severity of consequences if the risk materializes)
-Negligible (1) — Minor issue, no meaningful business disruption
 
-Minor (2) — Limited impact, handled within normal operations
+- **Negligible (1)**: Minor issue, no meaningful business disruption
+- **Minor (2)**: Limited impact, handled within normal operations
+- **Moderate (3)**: Noticeable disruption, requires management attention
+- **Major (4)**: Significant harm to operations, finances, or reputation
+- **Critical (5)**: Existential threat, regulatory action, major data breach
 
-Moderate (3) — Noticeable disruption, requires management attention
+**Risk Tiers and Response Strategy**
 
-Major (4) — Significant harm to operations, finances, or reputation
-
-Critical (5) — Existential threat, regulatory action, major data breach
-
-Risk tiers and response strategy
-
-Critical (16–25) — Immediate executive attention required
+- **Critical (16–25)**: Immediate executive attention required
 
 Mandatory escalation to senior leadership / legal / compliance
+
 Remediation timeline: days, not weeks
+
 Examples: active regulatory investigation, confirmed data breach, production safety failure affecting customers
-High (10–15) — Active management required
+
+- **High (10–15)**: Active management required
 
 Assigned owner with defined remediation plan
+
 Regular progress reporting to leadership
+
 Examples: unpatched critical vulnerability in production, audit finding with regulatory deadline, missing access controls on sensitive data
-Medium (5–9) — Monitored and scheduled
+
+- **Medium (5–9)**: Monitored and scheduled
 
 Tracked in risk register with planned remediation
+
 Reviewed in periodic governance cycles (monthly/quarterly)
+
 Examples: incomplete documentation for compliance controls, technical debt creating future compliance gaps
-Low (1–4) — Accept or address opportunistically
+
+- **Low (1–4)**: Accept or address opportunistically
 
 Documented and acknowledged
+
 Addressed during normal development cycles
+
 Examples: minor policy deviations in non-production environments, cosmetic gaps in internal reporting
 
-What is the AI business strategist actually deciding?
+**What AI business Strategists Actually Decide**
 
 | Strategist's Question              | What the Risk Classification Matrix Provides                      |
 | ---------------------------------- | ----------------------------------------------------------------- |
@@ -422,7 +428,7 @@ Risk classification or activities during the different stages in the AI lifecycl
 
 **Why are Risk Controls Needed?**
 
-AI systems in production operate at scale, often making or influencing decisions in real time with minimal human oversight. Unlike traditional software, generative AI models can produce unpredictable, non-deterministic outputs—meaning a single uncontrolled failure can propagate rapidly across customers, transactions, or processes before anyone notices. Risk controls act as the structural safeguards that keep AI systems aligned with your organization's values, legal obligations, and quality standards, even as models encounter inputs and scenarios they weren't explicitly designed for
+AI systems in production operate at scale, often making or influencing decisions in real time with minimal human oversight. Unlike traditional software, generative AI models can produce unpredictable, non-deterministic outputs meaning a single uncontrolled failure can propagate rapidly across customers, transactions, or processes before anyone notices. Risk controls act as the structural safeguards that keep AI systems aligned with your organization's values, legal obligations, and quality standards, even as models encounter inputs and scenarios they weren't explicitly designed for
 
 **Types of Risk Controls and Safeguards**
 
@@ -438,7 +444,7 @@ AI systems in production operate at scale, often making or influencing decisions
 - Application Layer
 - Output Layer
 
-Services like Amazon Bedrock Guardrails provide configurable content filters, topic restrictions, and sensitive information redaction that sit between your model and your users. These mechanisms allow you to define explicit boundaries—blocking toxic content, preventing off-topic responses, or masking personally identifiable information—without modifying the underlying model
+Services like Amazon Bedrock Guardrails provide configurable content filters, topic restrictions, and sensitive information redaction that sit between your model and your users. These mechanisms allow you to define explicit boundaries blocking toxic content, preventing off-topic responses, or masking personally identifiable information—without modifying the underlying model
 
 For an AI Strategist, this is critical because it decouples your safety policies from your model architecture. You can update risk controls independently and consistently across multiple applications, even as the models behind them evolve
 
@@ -448,13 +454,13 @@ AI systems need access to data stores, APIs, and infrastructure to function, but
 
 **Human-in-the-Loop**
 
-Despite advances in model capability, AI systems lack the contextual judgment, ethical reasoning, and accountability that humans bring to high-stakes decisions. Human-in-the-loop controls ensure that critical actions—such as approving financial transactions, making medical recommendations, or escalating customer issues—are reviewed by a qualified person before execution. This doesn't mean humans must approve every output. It means strategically inserting human checkpoints where the cost of error is high, confidence is low, or regulatory requirements demand human accountability. This preserves organizational trust and provides a feedback mechanism that continuously improves the system over time
+Despite advances in model capability, AI systems lack the contextual judgment, ethical reasoning, and accountability that humans bring to high-stakes decisions. Human-in-the-loop controls ensure that critical actions such as approving financial transactions, making medical recommendations, or escalating customer issues—are reviewed by a qualified person before execution. This doesn't mean humans must approve every output. It means strategically inserting human checkpoints where the cost of error is high, confidence is low, or regulatory requirements demand human accountability. This preserves organizational trust and provides a feedback mechanism that continuously improves the system over time
 
 ### Skill 3.3.2: Recognize that bias can occur at multiple stages of the AI lifecycle and explain the importance of ongoing monitoring for bias drift
 
 **Why monitor AI systems in production?**
 
-AI models don't behave like static software—their performance can silently degrade as real-world data drifts from training distributions, user behavior shifts, or upstream dependencies change. Without active monitoring, an AI system can deliver increasingly inaccurate, biased, or harmful outputs for weeks before anyone realizes there's a problem. Monitoring closes this visibility gap, giving you the operational awareness to detect issues early, respond quickly, and maintain the trust of your users and stakeholders
+AI models don't behave like static software their performance can silently degrade as real-world data drifts from training distributions, user behavior shifts, or upstream dependencies change. Without active monitoring, an AI system can deliver increasingly inaccurate, biased, or harmful outputs for weeks before anyone realizes there's a problem. Monitoring closes this visibility gap, giving you the operational awareness to detect issues early, respond quickly, and maintain the trust of your users and stakeholders
 
 **What should you be monitoring for?**
 
@@ -475,13 +481,13 @@ Point-in-time evaluations are insufficient for AI systems because their behavior
 
 AI systems are high-value targets. If compromised, they can expose sensitive data, manipulate decision-making at scale, and create organizational liability. That's why an AI Strategist should ensure security monitoring is in place, giving real-time visibility into access patterns, API activity, and operational anomalies before they cause harm
 
-Amazon CloudWatch provides real-time metrics, logs, and alarms for your AI infrastructure—tracking invocation counts, error rates, latency, and resource utilization so you can detect operational anomalies immediately. Amazon CloudTrail complements this by recording every API call across your AWS environment, creating an immutable audit trail of who accessed your AI resources, what actions they took, and when. Together, they give you both the operational visibility and the forensic record needed to detect unauthorized access, investigate security incidents, and demonstrate compliance to auditors
+Amazon CloudWatch provides real-time metrics, logs, and alarms for your AI infrastructure tracking invocation counts, error rates, latency, and resource utilization so you can detect operational anomalies immediately. Amazon CloudTrail complements this by recording every API call across your AWS environment, creating an immutable audit trail of who accessed your AI resources, what actions they took, and when. Together, they give you both the operational visibility and the forensic record needed to detect unauthorized access, investigate security incidents, and demonstrate compliance to auditors
 
 **Monitoring for privacy**
 
 AI systems routinely process large volumes of sensitive data. Without continuous oversight to detect unauthorized access, unintended data exposure, or mishandling of personally identifiable information, the organization risks regulatory violations, loss of customer trust, and significant legal liability. That's why an AI Strategist should ensure privacy monitoring is in place
 
-Amazon GuardDuty uses threat intelligence and anomaly detection to identify suspicious activity targeting your AI workloads—such as unusual data access patterns or compromised credentials—without manual detection rules. AWS KMS (Key Management Service) encrypts data at rest and in transit with centrally managed keys, and logs every encryption and decryption event for audit purposes. Amazon Macie uses machine learning to automatically discover, classify, and protect sensitive data such as PII stored in S3, alerting you when sensitive information is exposed or accessed inappropriately. For an AI Strategist, these services collectively ensure that the data fueling your AI systems remains private, encrypted, and accessed only by authorized entities
+Amazon GuardDuty uses threat intelligence and anomaly detection to identify suspicious activity targeting your AI workloads such as unusual data access patterns or compromised credentials without manual detection rules. AWS KMS (Key Management Service) encrypts data at rest and in transit with centrally managed keys, and logs every encryption and decryption event for audit purposes. Amazon Macie uses machine learning to automatically discover, classify, and protect sensitive data such as PII stored in S3, alerting you when sensitive information is exposed or accessed inappropriately. For an AI Strategist, these services collectively ensure that the data fueling your AI systems remains private, encrypted, and accessed only by authorized entities
 
 **Amazon Bedrock Monitoring**
 
@@ -497,12 +503,10 @@ If an AI Strategist isn't aware of this, they may treat model deployment as a on
 
 Bias can enter AI systems at every stage of the lifecycle
 
-- Data collection – Unrepresentative or historically skewed datasets introduce bias before training begins
-- Feature engineering – Encoding societal prejudices into variables embeds discrimination into the model's inputs
-- Model training – Algorithms can amplify existing patterns of inequity present in the data
-- Deployment – Feedback loops form where biased outputs influence future inputs, compounding the problem over time
-
-**Why does it happen?**
+- **Data Collection**: Unrepresentative or historically skewed datasets introduce bias before training begins
+- **Feature Engineering**: Encoding societal prejudices into variables embeds discrimination into the model's inputs
+- **Model training**: Algorithms can amplify existing patterns of inequity present in the data
+- **Deployment**: Feedback loops form where biased outputs influence future inputs, compounding the problem over time
 
 Key drivers of bias drift:
 
@@ -511,11 +515,11 @@ Key drivers of bias drift:
 - **Concept Drift**: The underlying relationship between inputs and outcomes changes. For example, creditworthiness criteria might shift during an economic downturn, disproportionately affecting certain populations
 - **Upstream Changes**: Alterations to data sources, feature pipelines, or third-party integrations introduce new skews silently, without triggering any explicit model change
 
-**Impact of bias on the organization**
+**Bias Impact on the Organisation**
 
-For an AI Strategist, the critical takeaway is that bias drift is not a technical edge case—it is an operational risk with compounding consequences that grows more severe the longer it goes undetected
+For an AI Strategist, the critical takeaway is that bias drift is not a technical edge case it is an operational risk with compounding consequences that grows more severe the longer it goes undetected
 
-Ongoing monitoring for bias drift is essential—not optional—because point-in-time fairness audits only capture a snapshot, while bias itself is a moving target that evolves with shifting data, populations, and real-world conditions
+Ongoing monitoring for bias drift is essential not optional because point-in-time fairness audits only capture a snapshot, while bias itself is a moving target that evolves with shifting data, populations, and real-world conditions
 
 **Impacts of Bias Drift**
 
@@ -529,14 +533,16 @@ Ongoing monitoring for bias drift is essential—not optional—because point-in
 
 **What Is harmful content?**
 
-Harmful content is any AI-generated output that causes or risks causing damage to individuals, groups, or the organization—whether through direct harm to users, violation of laws and policies, or erosion of trust. For an AI Strategist, harmful content is both a user safety issue and a business risk. A single unfiltered output can trigger regulatory action, legal liability, or public backlash at the speed of a single interaction
+Harmful content is any AI-generated output that causes or risks causing damage to individuals, groups, or the organization whether through direct harm to users, violation of laws and policies, or erosion of trust. For an AI Strategist, harmful content is both a user safety issue and a business risk. A single unfiltered output can trigger regulatory action, legal liability, or public backlash at the speed of a single interaction
 
 An AI Strategist's role is to define the requirements: which content categories to block, what risk thresholds are acceptable, which use cases need stricter controls, and how policies align with business objectives and regulatory obligations. In practice, the Strategist sets the "what and why" (policy, risk tolerance, success criteria) while the technical team owns the "how" (implementation, configuration, testing). The Strategist then validates that the implemented controls meet the defined requirements and adjusts policies as business needs evolve
 
 **Determining Impact and Likelihood for Harmful Content Risks**
 
 Likelihood depends on how often the AI system encounters prompts or scenarios that could trigger harmful outputs, the volume and diversity of users interacting with it, and whether existing guardrails have known gaps for specific content categories
+
 Impact is determined by asking: if this harmful content reaches a user, what is the worst realistic outcome? Consider the severity spectrum, from minor reputational discomfort to regulatory fines, legal liability, or direct user harm. Factor in the audience (internal employees versus external customers), the scale of exposure (one user versus millions), and the speed at which damage could propagate before detection and intervention
+
 By mapping each content category against these two dimensions, the Strategist can prioritize mitigation investments where high-likelihood and high-impact risks intersect. They can also set acceptable risk thresholds for lower-severity categories and define escalation criteria that trigger policy revision when the risk landscape shifts
 
 | Category                             | Description                                                                                                                                                         |
@@ -594,11 +600,11 @@ AI systems can inadvertently reproduce copyrighted material, proprietary code, o
 
 **Business Impact and Risk Exposure**
 
-- Reputational damage: brand harm from AI-generated offensive content
-- Legal liability: lawsuits, regulatory fines, injunctions
-- Operational disruption: takedown notices, service suspensions
-- Financial costs: settlements, licensing fees, compliance infrastructure
-- User trust erosion: loss of customers due to safety or IP concerns
+- **Reputational Damage**: brand harm from AI-generated offensive content
+- **Legal Liability**: lawsuits, regulatory fines, injunctions
+- **Operational Disruption**: takedown notices, service suspensions
+- **Financial Costs**: settlements, licensing fees, compliance infrastructure
+- **User Trust Erosion**: loss of customers due to safety or IP concerns
 
 #### Preventing IP Issues in AI Systems
 
@@ -688,7 +694,7 @@ Create mechanisms for users to report inaccuracies, and use that data to improve
 
 **Data Quality Degradation**
 
-Data quality degradation occurs when the data feeding an AI system becomes less accurate, complete, consistent, or relevant over time—leading to declining model performance even when the model itself hasn't changed. For an AI Strategist, this is a critical risk because AI systems are only as good as the data they consume, and degraded data silently erodes the value and trustworthiness of AI-driven decisions
+Data quality degradation occurs when the data feeding an AI system becomes less accurate, complete, consistent, or relevant over time leading to declining model performance even when the model itself hasn't changed. For an AI Strategist, this is a critical risk because AI systems are only as good as the data they consume, and degraded data silently erodes the value and trustworthiness of AI-driven decisions
 
 **Identify Data Quality Degradation**
 
@@ -737,14 +743,19 @@ Schedule regular reviews of data quality across all sources, rather than assumin
 
 **Plan for Graceful Degradation**
 
-Define what the AI system should do when data quality drops below acceptable levels—such as falling back to a simpler model, alerting a human, or pausing automated decisions until the issue is resolved
+Define what the AI system should do when data quality drops below acceptable levels such as falling back to a simpler model, alerting a human, or pausing automated decisions until the issue is resolved
 
 **Model Drift**
 
-Model drift is the degradation of a deployed model's predictive performance over time because the real world has changed since the model was trained. It's not a bug — it's an inevitability. Every model is a snapshot of patterns that existed in historical data, and the world doesn't hold still
+Model drift is the degradation of a deployed model's predictive performance over time because the real world has changed since the model was trained. It's not a bug it's an inevitability. Every model is a snapshot of patterns that existed in historical data, and the world doesn't hold still
 
-- **Concept Drift**: The relationship between inputs and the correct output changes. What "good" looks like has shifted. Example: customer churn drivers change after a competitor launches a new product, but your features stay the same
-- **Data Drift**: The distribution of input data changes, even if the underlying relationship hasn't. Example: your model was trained on pre-pandemic purchasing behavior, and now the customer mix looks fundamentally different
+- **Concept Drift**: The relationship between inputs and the correct output changes. What "good" looks like has shifted. 
+
+Example: customer churn drivers change after a competitor launches a new product, but your features stay the same
+
+- **Data Drift**: The distribution of input data changes, even if the underlying relationship hasn't. 
+
+Example: your model was trained on pre-pandemic purchasing behavior, and now the customer mix looks fundamentally different
 
 **Detecting Model Drift**
 
@@ -754,37 +765,56 @@ There are several ways to detect model drift. Expand each approach to learn what
 
 Use when ground truth is accessible within an acceptable timeframe. The gold standard is to monitor model performance directly, but this is often delayed because ground truth takes time to arrive. This is the only approach that confirms drift is actually hurting business outcomes
 
-Track core metrics (accuracy, precision, recall, F1, RMSE — whatever matters for the use case) against a rolling baseline
-Set business-meaningful thresholds, not just statistical ones. A 2% accuracy drop might be noise for one model and a $10M problem for another
+Track core metrics: accuracy, precision, recall, F1, RMSE (whatever matters for the use case) against a rolling baseline
+
+Set business meaningful thresholds, not just statistical ones. A 2% accuracy drop might be noise for one model and a $10M problem for another
+
 Use proxy metrics when ground truth is delayed. For example, if you're predicting loan defaults and won't know the outcome for 12 months, track early warning signals like payment behavior at 30/60/90 days
-Monitor input data distributions
+
+**Monitor Input Data Distributions**
+
 Use as a leading indicator, particularly when ground truth lags by weeks or months. Best suited for catching upstream data quality issues, population shifts, or feature pipeline breakages before they degrade predictions. This gives you early warning before performance degrades
 
-Population Stability Index (PSI): Compares the distribution of each feature between training and current production data. Simple, interpretable, widely used
-Kolmogorov-Smirnov test: Statistical test for distribution shift on individual features
-Multivariate drift detection: Tools like Maximum Mean Discrepancy (MMD) or domain classifiers detect shifts across feature combinations that univariate tests miss
-Monitor prediction distributions
+**Population Stability Index (PSI)**: Compares the distribution of each feature between training and current production data. Simple, interpretable, widely used
+
+**Kolmogorov-Smirnov Test**: Statistical test for distribution shift on individual features
+
+**Multivariate Drift Detection**: Tools like Maximum Mean Discrepancy (MMD) or domain classifiers detect shifts across feature combinations that univariate tests miss
+
+**Monitor Prediction Distributions**
+
 Use when you need immediate, low-cost detection without waiting for labels. Especially valuable for surfacing sudden behavioral shifts (e.g., approval rates jumping 30%) that signal either concept drift or a data problem. Think of it as your fastest tripwire
 
-If the model's output distribution shifts significantly (e.g., suddenly approving 30% more loan applications), something has changed — either the inputs or the concept
+If the model's output distribution shifts significantly (e.g., suddenly approving 30% more loan applications), something has changed. Either the inputs or the concept
+
 This is fast to compute and doesn't require ground truth
-Establish baselines and cadence
+
+**Establish Baselines and Cadence**
+
 Not a detection method itself, but the foundation that makes all other methods operational. Use to define what "normal" looks like and how often you check
 
 Define a reference window (typically the validation set from training or a stable production period)
-Run drift checks on a cadence matched to your data velocity — real-time for streaming systems, daily or weekly for batch
 
-**Role of the AI business strategist in mitigating model drift**
+Run drift checks on a cadence matched to your data velocity: real-time for streaming systems, daily or weekly for batch
 
-As an AI strategist, your role isn't to detect or fix model drift yourself—it's to build the governance, accountability, and organizational infrastructure that ensures drift is caught early and addressed decisively
+**Role of the AI Business Strategist in Mitigating Model Drift**
+
+As an AI strategist, your role isn't to detect or fix model drift yourself it's to build the governance, accountability, and organizational infrastructure that ensures drift is caught early and addressed decisively
 
 - **Define performance baselines and thresholds**: Establish the acceptable performance boundaries for each AI use case so the technical team knows exactly when drift has crossed from tolerable to actionable
+
 - **Set retraining policies**: Determine how often models should be retrained or refreshed, whether on a fixed schedule or triggered by performance degradation, and ensure those policies are resourced and followed
+
 - **Require ongoing monitoring as a launch condition**: Make continuous performance monitoring a non-negotiable requirement for any AI system entering production, not an optional add-on
+
 - **Assign accountability for model health**: Ensure clear ownership exists for monitoring each model's performance over time, so drift doesn't go unnoticed because no one is explicitly responsible
+
 - **Align drift tolerance to business impact**: Prioritize monitoring and response efforts based on which models carry the highest business risk if they degrade—a recommendation engine and a fraud detection model warrant different urgency levels
+
 - **Establish escalation and decision criteria**: Define when a drifting model should be retrained, rolled back, supplemented with human review, or taken offline entirely, so the team can act quickly without waiting for strategic direction in the moment
+
 - **Budget for model maintenance**: Advocate for ongoing investment in model upkeep, ensuring leadership understands that AI systems require continuous maintenance—not just initial development funding
+
 - **Communicate drift risk to stakeholders**: Educate business leaders and product owners that model performance naturally decays over time, setting realistic expectations and building organizational support for proactive maintenance
 
 #### Organizational Governance
@@ -792,16 +822,21 @@ As an AI strategist, your role isn't to detect or fix model drift yourself—it'
 Detection and mitigation are technical capabilities. As an AI Strategist, making them work requires organizational structure. Here are some common best practices for organizational governance
 
 1. Define ownership
-   Every production model needs a named owner accountable for monitoring and responding to drift. Not a team — a person
+
+   Every production model needs a named owner accountable for monitoring and responding to drift. Not a team. A person.
 
 2. Set SLAs for drift response
+
    Define how quickly drift must be detected, escalated, and remediated for each model tier. A Tier 1 revenue model might have a 24-hour detection SLA; a low-impact internal tool might have 30 days
 
 3. Document retraining criteria and approval gates:
+
    When does retraining trigger? Who approves a new model for production? What validation must pass? This should be written policy, not tribal knowledge
 
 4. Conduct model health reviews
-   Quarterly reviews of all production models — performance trends, drift signals, data freshness, and upcoming risks (e.g., known business changes that will affect input distributions)
+
+   Quarterly reviews of all production models: performance trends, drift signals, data freshness, and upcoming risks (e.g., known business changes that will affect input distributions)
 
 5. Budget for the full lifecycle
+
    Organizations routinely budget for model development but not for ongoing monitoring and maintenance. A reasonable expectation is that sustaining a model in production costs 2-3x what it cost to build it, spread over its lifetime
