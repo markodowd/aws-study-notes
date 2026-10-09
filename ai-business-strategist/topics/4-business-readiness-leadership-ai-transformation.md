@@ -32,7 +32,7 @@ Serverless data integration, discover/prepare/combine/transform data, automated 
 
 **AWS CAF (Platform perspective)**
 
-Iinfrastructure readiness assessment, technology foundation for AI workloads.
+Infrastructure readiness assessment, technology foundation for AI workloads.
 
 **AWS Prescriptive Guidance (Organization Adoption Framework)**
 
@@ -148,10 +148,10 @@ At the company: No AI governance. No model oversight. CFO asking liability quest
 
 **Prioritization criteria**
 
-- Strategic impact: Which gap, if closed, enables the most downstream progress?
-- Prerequisite dependencies: Which gaps block other gaps from being addressed?
-- Time-to-value: Which investment shows measurable results fastest?
-- Risk: Which gap, if left unaddressed, creates the highest organizational risk?
+- **Strategic impact**: Which gap, if closed, enables the most downstream progress?
+- **Prerequisite dependencies**: Which gaps block other gaps from being addressed?
+- **Time-to-value**: Which investment shows measurable results fastest?
+- **Risk**: Which gap, if left unaddressed, creates the highest organizational risk?
 
 The AWS Five V's Framework (Value, Visualize, Validate, Verify, Venture) provides a structured approach to sequencing these decisions. Start by targeting high-impact opportunities aligned with strategic priorities. Define clear success metrics linked to business outcomes. Test against real-world constraints. Create a scalable path to production. Secure resources for long-term success
 
@@ -189,7 +189,7 @@ One trap sits between the first two dimensions and deserves its own flag. Timeli
 
 Each system can be clean in isolation while the organization is data-unready
 
-**What "data ready" Actually Means**
+**What "Data Ready" Actually Means**
 
 Data is ready when the AI workload can use it without manual reconciliation, without violating access or sovereignty rules, and without rebuilding the input every time it runs
 
@@ -638,8 +638,11 @@ Retraining commitment: For roles that consolidate, the organization's commitment
 **Phases of an AI Transformation**
 
 - **Envision**: AI is on the strategic radar. No active build. The work is vision setting, use case identification, and stakeholder alignment. The common mistake is jumping to a pilot before the use case is real
+
 - **Experiment**: Pilots are running. The work is validating value, building data foundations, and developing initial talent. The common mistake is declaring success from one pilot and trying to scale the result
+
 - **Launch**: First production deployments. Dedicated teams. Measurable business outcomes. The work is establishing governance, investing in change management, and hardening operations. The common mistake is treating production like a bigger pilot
+
 - **Scale**: Enterprise-wide integration. Operationalized models. Continuous improvement culture. The work is establishing CoEs (Centers of Excellence), tracking sustained-value metrics, and managing business continuity. The common mistake is assuming what worked in one business unit transfers directly to another
 
 ### Skill 4.4.2: Implement scaling methodologies that start with short-term wins and build toward enterprise-wide deployments
